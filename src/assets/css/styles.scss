@@ -1,9 +1,6 @@
-@import 'theme-colors';
+@import 'themes';
+@import 'global';
 @import 'cascadia-code';
-
-:root {
-    --font-cascadia-code: 'Cascadia Code', serif;
-}
 
 *,
 *::before,
