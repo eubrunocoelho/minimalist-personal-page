@@ -1,7 +1,9 @@
 @import 'theme-colors';
+@import 'cascadia-code';
 
 html,
 body {
+    font-family: 'Cascadia Code', serif;
     height: 100%;
 }
 
