@@ -1,0 +1,10 @@
+@import 'theme-colors';
+
+html,
+body {
+    height: 100%;
+}
+
+.app-background {
+    background: var(--app-background-color);
+}
