@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-		<input type="checkbox" id='theme-switch' v-model="darkMode"/>
-		<label for='theme-switch'>
+	<div id="app">
+		<input type="checkbox" id="theme-swith" v-model="darkMode">
+		<label for="theme-swith">
 			<span v-if="darkMode === true">
 				<p>Light</p>
 			</span>
@@ -9,7 +9,7 @@
 				<p>Dark</p>
 			</span>
 		</label>
-    </div>
+	</div>
 </template>
 
 <script>
