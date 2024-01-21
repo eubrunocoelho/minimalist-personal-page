@@ -1,12 +1,25 @@
 @import 'theme-colors';
 @import 'cascadia-code';
 
-html,
-body {
-    font-family: 'Cascadia Code', serif;
-    height: 100%;
+:root {
+    --font-cascadia-code: 'Cascadia Code', serif;
 }
 
-.app-background {
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent !important;
+    box-sizing: border-box !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+body {
+    font-family: var(--font-cascadia-code);
+}
+
+.app-container {
     background: var(--app-background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
