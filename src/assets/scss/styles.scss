@@ -1,7 +1,7 @@
-@import 'reset';
-@import 'colors';
-@import 'global';
-@import 'cascadia-code';
+@import './../css/reset.css';
+@import './../css/cascadia-code.css';
+@import './colors.scss';
+@import './global.scss';
 
 *,
 *::before,
@@ -24,6 +24,7 @@ main#app-container {
 .header {
     align-items: center;
     background: var(--header-background-color);
+    box-shadow: var(--header-box-shadow);
     display: flex;
     min-height: 60px;
     padding: 0 10px 0 10px;
