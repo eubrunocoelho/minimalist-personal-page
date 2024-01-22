@@ -1,0 +1,12 @@
+:root {
+    --app-background-color: #eceff1;
+    --header-background-color: #1a2026;
+    --toggle-box-background-color: #27323e;
+    --toggle-box-border-color: #000;
+    --toggle-box-line-color: #eceff1;
+    --toggle-theme-icon-color: #fff;
+}
+
+[theme="dark"] {
+    --app-background-color: #091a28;
+}

@@ -1,4 +1,5 @@
-@import 'themes';
+@import 'reset';
+@import 'colors';
 @import 'global';
 @import 'cascadia-code';
 
@@ -11,12 +12,68 @@
 }
 
 body {
-    font-family: var(--font-cascadia-code);
+    background: var(--app-background-color);
 }
 
-.app-container {
-    background: var(--app-background-color);
+main#app-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.header {
+    align-items: center;
+    background: var(--header-background-color);
+    display: flex;
+    min-height: 60px;
+    padding: 0 10px 0 10px;
+
+    &__toggle-box {
+        align-items: center;
+        background: var(--toggle-box-background-color);
+        border: 1px solid var(--toggle-box-border-color);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+
+        &__line {
+            background: var(--toggle-box-line-color);
+            display: block;
+            height: 2px;
+            width: 25px;
+        }
+    }
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: end;
+        width: 100%;
+
+        &__theme-switch {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            width: 30px;
+
+            &__icon {
+                color: var(--toggle-theme-icon-color);
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+.footer {
+    color: blue;
+    margin-top: auto;
 }

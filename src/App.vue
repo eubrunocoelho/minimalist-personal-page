@@ -1,7 +1,18 @@
 <template>
-    <div id="app">
-        <p>Olá, mundo!</p>
-    </div>
+    <main id="app-container">
+        <header class="header">
+            <div class="header__toggle-box">
+                <span class="header__toggle-box__line"></span>
+                <span class="header__toggle-box__line"></span>
+                <span class="header__toggle-box__line"></span>
+            </div>
+            <div class="header__nav">
+                <div class="header__nav__theme-switch">
+                    <ion-icon name="sunny" class="header__nav__theme-switch__icon"></ion-icon>
+                </div>
+            </div>
+        </header>
+    </main>
 </template>
 
 <script>
