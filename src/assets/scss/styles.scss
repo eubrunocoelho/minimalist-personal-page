@@ -36,17 +36,21 @@ main#app-container {
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        gap: 5px;
         height: 40px;
         justify-content: center;
+        row-gap: 5px;
         width: 40px;
 
-        &__line {
+        &-line {
             background: var(--toggle-box-line-color);
             display: block;
             height: 2px;
             width: 25px;
         }
+    }
+
+    &__logo {
+        display: none;
     }
 
     &__nav {
@@ -55,6 +59,10 @@ main#app-container {
         flex: 1;
         justify-content: end;
         width: 100%;
+
+        &__menu {
+            display: none;
+        }
 
         &__theme-switch {
             align-items: center;
@@ -77,4 +85,40 @@ main#app-container {
 .footer {
     color: blue;
     margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 30px 0 30px;
+
+        &__toggle-box {
+            display: none;
+        }
+
+        &__logo {
+            background: url(../img/logo.svg) center no-repeat;
+            background-size: contain;
+            display: block;
+            height: 26px;
+            text-indent: -99999px;
+            width: 208px;
+        }
+
+        &__nav {
+            &__menu {
+                column-gap: 22px;
+                display: flex;
+                margin: 0 18px 0 0;
+
+                &-link {
+                    color: var(--link-menu-color);
+                    font-family: var(--font-cascadia-code);
+                    font-size: 15px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }   
 }
