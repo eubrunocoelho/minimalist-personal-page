@@ -27,7 +27,16 @@ main#app-container {
     box-shadow: var(--header-box-shadow);
     display: flex;
     min-height: 60px;
-    padding: 0 10px 0 10px;
+    width: 100%;
+
+    &-container {
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        min-height: 60px;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
 
     &__toggle-box {
         align-items: center;
@@ -87,12 +96,10 @@ main#app-container {
     margin-top: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
     .header {
-        padding: 0 30px 0 30px;
-
         &__toggle-box {
-            display: none;
+            margin: 0 15px 0 0;
         }
 
         &__logo {
@@ -102,6 +109,18 @@ main#app-container {
             height: 26px;
             text-indent: -99999px;
             width: 208px;
+        }
+    }
+}
+
+@media screen and (min-width: 696px) {
+    .header {
+        &-container {
+            padding: 0 30px 0 30px;
+        }
+
+        &__toggle-box {
+            display: none;
         }
 
         &__nav {
@@ -120,5 +139,14 @@ main#app-container {
                 }
             }
         }
-    }   
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .header {
+        &-container {
+            max-width: 1200px;
+            padding: 0 30px 0 30px;
+        }
+    }
 }
