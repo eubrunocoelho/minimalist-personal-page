@@ -7,7 +7,7 @@
                 <span class="header__toggle-box__line"></span>
             </div>
             <a href="#" class="header__logo">Bruno Coelho</a>
-            <div class="header__nav">
+            <nav class="header__nav">
                 <ul class="header__nav__menu">
                     <li>
                         <a href="#" class="header__nav__menu__link">Home</a>
@@ -25,7 +25,7 @@
                 <div class="header__nav__theme-switch">
                     <ion-icon name="sunny" class="header__nav__theme-switch__icon"></ion-icon>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
 </template>
