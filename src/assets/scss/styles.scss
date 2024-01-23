@@ -50,7 +50,7 @@ main#app-container {
         row-gap: 5px;
         width: 40px;
 
-        &-line {
+        &__line {
             background: var(--toggle-box-line-color);
             display: block;
             height: 2px;
@@ -92,7 +92,6 @@ main#app-container {
 }
 
 .footer {
-    color: blue;
     margin-top: auto;
 }
 
@@ -129,7 +128,7 @@ main#app-container {
                 display: flex;
                 margin: 0 18px 0 0;
 
-                &-link {
+                &__link {
                     color: var(--link-menu-color);
                     font-family: var(--font-cascadia-code);
                     font-size: 15px;
