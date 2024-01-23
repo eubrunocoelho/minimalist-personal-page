@@ -11,6 +11,7 @@ library.add(fas, fab, far);
 dom.watch();
 
 const app = createApp(App);
+
 app.config.ignoredElements = [/^ion-/];
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.mount('#app');
