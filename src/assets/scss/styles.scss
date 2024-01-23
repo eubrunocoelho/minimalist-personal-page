@@ -143,11 +143,15 @@ main#app-container {
 
             &__item {
                 align-items: center;
-                background: var(--footer-icon-color);
                 display: flex;
+                font-size: 26px;
                 height: 36px;
                 justify-content: center;
                 width: 36px;
+
+                &__link {
+                    color: var(--footer-icon-color);
+                }
             }
         }
     }

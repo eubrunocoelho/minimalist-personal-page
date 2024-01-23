@@ -20,13 +20,19 @@
                 </ul>
                 <ul class="footer__nav__socials">
                     <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__link">#</a>
+                        <a href="#" class="footer__nav__socials__item__link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </li>
                     <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__link">#</a>
+                        <a href="#" class="footer__nav__socials__item__link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </li>
                     <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__link">#</a>
+                        <a href="#" class="footer__nav__socials__item__link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
