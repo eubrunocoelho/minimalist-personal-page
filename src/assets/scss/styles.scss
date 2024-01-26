@@ -27,14 +27,14 @@ main#app-container {
     box-shadow: var(--header-box-shadow);
     display: flex;
     margin: 0 0 60px 0;
-    min-height: 60px;
+    min-height: 72px;
     width: 100%;
 
     &-container {
         align-items: center;
         display: flex;
         margin: 0 auto;
-        min-height: 60px;
+        min-height: 72px;
         padding: 0 10px 0 10px;
         width: 100%;
     }
@@ -187,9 +187,9 @@ main#app-container {
             background: url(../img/logo.svg) center no-repeat;
             background-size: contain;
             display: block;
-            height: 26px;
+            height: 58px;
             text-indent: -99999px;
-            width: 208px;
+            width: 172px;
         }
     }
 }
