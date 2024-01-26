@@ -119,6 +119,8 @@ main#app-container {
  */
 
 .section {
+    display: flex;
+    flex-direction: column;
     margin: calc(50px + 64px) auto 60px;
     padding: 0 10px 0 10px;
     width: 100%;
