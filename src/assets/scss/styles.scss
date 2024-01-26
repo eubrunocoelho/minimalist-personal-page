@@ -322,37 +322,6 @@ main#app-container {
 }
 
 @media screen and (min-width: 756px) {
-    .footer {
-        &-container {
-            padding: 0 30px 0 30px;
-        }
-
-        &__nav {
-            align-items: center;
-            flex-direction: row;
-            height: 100%;
-            margin: 20px 0 40px 0;
-
-            &__title {
-                height: 100%;
-            }
-
-            &__menu {
-                align-items: center;
-                flex: 1;
-                margin: 20px 0 20px 0;
-                width: 100%;
-            }
-
-            &__socials {
-                justify-content: center;
-                width: 200px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
     .section {
         padding: 0 30px 0 30px;
 
@@ -381,6 +350,35 @@ main#app-container {
                     justify-content: start;
                     margin: 22px 0 0 0;
                 }
+            }
+        }
+    }
+
+    .footer {
+        &-container {
+            padding: 0 30px 0 30px;
+        }
+
+        &__nav {
+            align-items: center;
+            flex-direction: row;
+            height: 100%;
+            margin: 20px 0 40px 0;
+
+            &__title {
+                height: 100%;
+            }
+
+            &__menu {
+                align-items: center;
+                flex: 1;
+                margin: 20px 0 20px 0;
+                width: 100%;
+            }
+
+            &__socials {
+                justify-content: center;
+                width: 200px;
             }
         }
     }
