@@ -2,6 +2,14 @@
 @import './../css/cascadia-code.css';
 @import './colors.scss';
 @import './global.scss';
+@import './components.scss';
+@import './modifiers.scss';
+
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
 
 *,
 *::before,
@@ -15,18 +23,29 @@ body {
     background: var(--app-background-color);
 }
 
+/**
+ * =================================================================================
+ * MAIN
+ * =================================================================================
+ */
+
 main#app-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/**
+ * =================================================================================
+ * HEADER
+ * =================================================================================
+ */
+
 .header {
     align-items: center;
     background: var(--header-background-color);
     box-shadow: var(--header-box-shadow);
     display: flex;
-    margin: 0 0 60px 0;
     min-height: 72px;
     width: 100%;
 
@@ -91,6 +110,73 @@ main#app-container {
         }
     }
 }
+
+/**
+ * =================================================================================
+ * SECTION
+ * =================================================================================
+ */
+
+.section {
+    margin: 50px auto 60px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+
+    /**
+    * =================================================================================
+    * PRESENTATION
+    * =================================================================================
+    */
+
+    &__presentation {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        &__profile-img {
+            border: 4px solid var(--border-profile-img);
+            border-radius: 50%;
+            height: 196px;
+            width: 196px;
+        }
+
+        &__summary {
+            font-family: var(--font-cascadia-code);
+            margin: 30px 0 0 0;
+
+            &__title {
+                color: var(--font-title-primary-color);
+                font-size: 31px;
+                font-weight: 600;
+            }
+
+            &__text {
+                color: var(--font-title-secondary-color);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.2;
+                margin: 14px 0 0 0;
+                text-align: center;
+
+                &--assent-color {
+                    color: var(--text-assent-color);
+                }
+            }
+
+            &__button-area {
+                display: flex;
+                justify-content: center;
+                margin: 18px 0 0 0;
+            }
+        }
+    }
+}
+
+/**
+ * =================================================================================
+ * FOOTER
+ * =================================================================================
+ */
 
 .footer {
     background: var(--footer-background-color);
@@ -176,6 +262,12 @@ main#app-container {
         }
     }
 }
+
+/**
+ * =================================================================================
+ * BREAKPOINTS (MOBILE-FIRST)
+ * =================================================================================
+ */
 
 @media screen and (min-width: 480px) {
     .header {
