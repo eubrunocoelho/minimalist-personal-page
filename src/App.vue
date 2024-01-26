@@ -3,12 +3,7 @@
         <VueHeader></VueHeader>
         <main class="main">
             <VuePresentation></VuePresentation>
-            <section class="section">
-                <div class="section__heading">
-                    <h1 class="section__heading__title">Sobre Mim</h1>
-                    <p class="section__heading__description">Bruno Coelho</p>
-                </div>
-            </section>
+            <VueAbout></VueAbout>
         </main>
         <VueFooter></VueFooter>
     </div>
@@ -17,12 +12,13 @@
 <script>
 import VueHeader from './components/Header.vue';
 import VuePresentation from './components/Presentation.vue';
+import VueAbout from './components/About.vue';
 import VueFooter from './components/Footer.vue';
 
 // precast
 export default {
     name: 'App',
-    components: { VueHeader, VuePresentation, VueFooter },
+    components: { VueHeader, VuePresentation, VueAbout, VueFooter },
     data() {
         return {
             darkMode: false
