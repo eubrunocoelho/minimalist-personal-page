@@ -370,6 +370,7 @@ body {
 
         &__presentation {
             flex-direction: row;
+            margin: 0 auto;
 
             &__profile-img {
                 height: 245px;
@@ -427,6 +428,14 @@ body {
     }
 }
 
+@media screen and (min-width: 830px) {
+    .section {
+        &__presentation {
+            width: 762px;
+        }
+    }
+}
+
 @media screen and (min-width: 948px) {
     .header {
         &-container {
@@ -436,8 +445,7 @@ body {
 
     .section {
         &__presentation {
-            margin: 0 auto;
-            max-width: 902px;
+            width: 902px;
         }
     }
 
