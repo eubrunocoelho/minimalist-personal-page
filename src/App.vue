@@ -1,9 +1,11 @@
 <template>
-    <main id="app-container">
+    <div id="app-container">
         <VueHeader></VueHeader>
-        <VuePresentation></VuePresentation>
+        <main class="main">
+            <VuePresentation></VuePresentation>
+        </main>
         <VueFooter></VueFooter>
-    </main>
+    </div>
 </template>
 
 <script>
