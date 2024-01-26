@@ -1,5 +1,6 @@
 @import './../css/reset.css';
 @import './../css/cascadia-code.css';
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
 @import './global.scss';
 @import './colors.scss';
 @import './components.scss';
@@ -211,6 +212,22 @@ body {
                 justify-content: center;
                 margin: 18px 0 0 0;
             }
+        }
+    }
+
+    /**
+    * =================================================================================
+    * ABOUT
+    * =================================================================================
+    */
+
+    &__about {
+        text-align: center;
+        &__text {
+            color: var(--font-text-color);
+            font-family: var(--font-open-sans);
+            font-size: 16px;
+            font-weight: 400;
         }
     }
 }
