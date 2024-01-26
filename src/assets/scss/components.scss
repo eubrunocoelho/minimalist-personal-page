@@ -1,0 +1,23 @@
+.button {
+    align-items: center;
+    border: 2px solid var(--button-border-color);
+    border-radius: 0;
+    color: var(--button-text-color);
+    display: flex;
+    font-family: var(--font-cascadia-code);
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 0;
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+
+    &--icon {
+        padding: 0 20px 0 16px !important;
+    }
+
+    &__icon {
+        font-size: 19px;
+        margin: 0 0 0 10px;
+    }
+}
