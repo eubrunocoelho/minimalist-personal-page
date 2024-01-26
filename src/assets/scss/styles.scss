@@ -46,14 +46,15 @@ main#app-container {
     background: var(--header-background-color);
     box-shadow: var(--header-box-shadow);
     display: flex;
-    min-height: 72px;
+    min-height: 64px;
+    position: fixed;
     width: 100%;
 
     &-container {
         align-items: center;
         display: flex;
         margin: 0 auto;
-        min-height: 72px;
+        min-height: 64px;
         padding: 0 10px 0 10px;
         width: 100%;
     }
@@ -118,7 +119,7 @@ main#app-container {
  */
 
 .section {
-    margin: 50px auto 60px;
+    margin: calc(50px + 64px) auto 60px;
     padding: 0 10px 0 10px;
     width: 100%;
 
