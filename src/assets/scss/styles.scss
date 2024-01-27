@@ -50,6 +50,7 @@ body {
     min-height: 64px;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 
     &-container {
         align-items: center;
