@@ -279,11 +279,13 @@ body {
                 font-size: 22px;
                 font-weight: 500;
                 padding: 0 0 10px 0;
+                margin: 0 0 20px 0;
             }
 
             &__item {
                 display: flex;
                 flex-direction: column;
+                margin: 0 0 10px 0;
                 width: 100%;
 
                 &__heading {
@@ -291,7 +293,7 @@ body {
                     display: flex;
                     font-family: var(--font-cascadia-code);
                     height: 40px;
-                    margin: 20px 0 0 0;
+                    margin: 0 0 0 0;
 
                     &__icon {
                         align-items: center;
