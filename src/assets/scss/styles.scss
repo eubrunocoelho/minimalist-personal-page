@@ -222,9 +222,12 @@ body {
     */
 
     &__about {
-        text-align: center;
+        margin: 0 auto;
+        width: 100%;
 
         &__summary {
+            height: 100%;
+            text-align: center;
             width: 100%;
 
             &__text {
@@ -236,11 +239,10 @@ body {
         }
 
         &__socials {
-            justify-content: center;
             column-gap: 10px;
             display: flex;
+            justify-content: center;
             margin: 20px 0 0 0;
-            width: 100%;
 
             &__item {
                 align-items: center;
@@ -478,6 +480,29 @@ body {
             &__socials {
                 justify-content: center;
                 width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        &__about {
+            display: flex;
+            justify-content: space-between;
+            width: 662px;
+
+            &__summary {
+                text-align: start;
+                width: 562px;
+            }
+
+            &__socials {
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                margin: 0 0 0 0;
+                width: max-content;
             }
         }
     }
