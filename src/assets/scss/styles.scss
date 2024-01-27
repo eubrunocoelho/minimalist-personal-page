@@ -224,11 +224,15 @@ body {
     &__about {
         text-align: center;
 
-        &__text {
-            color: var(--font-text-color);
-            font-family: var(--font-open-sans);
-            font-size: 16px;
-            font-weight: 400;
+        &__summary {
+            width: 100%;
+
+            &__text {
+                color: var(--font-text-color);
+                font-family: var(--font-open-sans);
+                font-size: 16px;
+                font-weight: 400;
+            }
         }
 
         &__socials {
