@@ -403,6 +403,8 @@ body {
     }
 
     .section {
+        padding: 0 30px 0 30px;
+
         &__heading {
             &__title {
                 font-size: 37px;
@@ -410,6 +412,25 @@ body {
 
             &__description {
                 margin: 5px 0 0 0;
+            }
+        }
+
+        &__about {
+            display: flex;
+            justify-content: space-between;
+            width: 602px;
+
+            &__summary {
+                text-align: start;
+                width: 522px;
+            }
+
+            &__socials {
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                margin: 0 0 0 0;
+                width: max-content;
             }
         }
     }
@@ -488,21 +509,10 @@ body {
 @media screen and (min-width: 768px) {
     .section {
         &__about {
-            display: flex;
-            justify-content: space-between;
             width: 662px;
 
             &__summary {
-                text-align: start;
                 width: 562px;
-            }
-
-            &__socials {
-                align-items: center;
-                flex-direction: column;
-                height: 100%;
-                margin: 0 0 0 0;
-                width: max-content;
             }
         }
     }
