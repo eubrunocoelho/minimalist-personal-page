@@ -269,6 +269,7 @@ body {
     &__skills {
         display: grid;
         grid-template-columns: 1fr;
+        row-gap: 32px;
 
         &__category {
             width: 100%;
