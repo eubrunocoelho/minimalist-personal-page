@@ -258,6 +258,76 @@ body {
             }
         }
     }
+
+    /**
+    * =================================================================================
+    * SKILLS
+    * =================================================================================
+    */
+
+    &__skills {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__item {
+            width: 100%;
+
+            &__title {
+                border-bottom: 3px solid var(--sub-heading-drop-line-color);
+                color: var(--font-title-primary-color);
+                font-family: var(--font-cascadia-code);
+                font-size: 22px;
+                font-weight: 500;
+                padding: 0 0 10px 0;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                &__heading {
+                    align-items: center;
+                    display: flex;
+                    font-family: var(--font-cascadia-code);
+                    height: 40px;
+                    margin: 20px 0 0 0;
+
+                    &__icon {
+                        align-items: center;
+                        display: flex;
+                        height: 40px;
+                        justify-content: center;
+                        margin: 0 10px 0 0;
+                        width: 40px;
+
+                        &-inner {
+                            background: url(../img/icons/html.svg) center;
+                            background-size: contain;
+                            filter: var(--icon-svg-color);
+                            height: 32px;
+                            width: 32px;
+                        }
+                    }
+
+                    &__title {
+                        color: var(--font-title-primary-color);
+                        flex: 1;
+                        font-size: 18px;
+                        font-weight: 500;
+                        width: 100%;
+                    }
+
+                    &__level {
+                        color: var(--font-title-secondary-color);
+                        font-size: 15px;
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /**
