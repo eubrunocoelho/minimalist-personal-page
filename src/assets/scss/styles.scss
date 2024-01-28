@@ -270,6 +270,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 32px;
+        width: 100%;
 
         &__category {
             width: 100%;
@@ -343,6 +344,14 @@ body {
                         height: 100%;
                         width: 100%;
                     }
+                }
+
+                &:only-child {
+                    margin: 0 0 0 0;
+                }
+
+                &:last-child {
+                    margin: 0 0 0 0;
                 }
             }
         }
@@ -522,6 +531,11 @@ body {
                 width: max-content;
             }
         }
+
+        &__skills {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 26px;
+        }
     }
 
     .footer {
@@ -562,6 +576,10 @@ body {
                     margin: 22px 0 0 0;
                 }
             }
+        }
+
+        &__skills {
+            margin: 0 auto;
         }
     }
 
@@ -612,6 +630,10 @@ body {
         &__presentation {
             width: 762px;
         }
+
+        &__skilss {
+            width: 762px;
+        }
     }
 }
 
@@ -636,6 +658,18 @@ body {
 
         &__presentation {
             width: 902px;
+        }
+
+        &__skills {
+            column-gap: 38px;
+            row-gap: 40px;
+            width: 902px;
+
+            &__category {
+                &__title {
+                    font-size: 25px;
+                }
+            }
         }
     }
 

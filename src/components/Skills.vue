@@ -152,7 +152,7 @@
                         <span class="section__skills__category__item__heading__icon">
                             <i class="section__skills__category__item__heading__icon-inner icon--laravel"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Laravel (PHP)</h3>
+                        <h3 class="section__skills__category__item__heading__title">Laravel</h3>
                         <span class="section__skills__category__item__heading__level">31%</span>
                     </div>
                     <div class="section__skills__category__item__progress-bar">
@@ -180,7 +180,7 @@
                         <span class="section__skills__category__item__heading__icon">
                             <i class="section__skills__category__item__heading__icon-inner icon--express"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Express</h3>
+                        <h3 class="section__skills__category__item__heading__title">Express.js</h3>
                         <span class="section__skills__category__item__heading__level">31%</span>
                     </div>
                     <div class="section__skills__category__item__progress-bar">
