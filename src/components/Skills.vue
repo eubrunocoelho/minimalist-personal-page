@@ -167,7 +167,7 @@
                             <i class="section__skills__category__item__heading__icon-inner icon--vuejs"></i>
                         </span>
                         <h3 class="section__skills__category__item__heading__title">Vue.js</h3>
-                        <span class="section__skills__category__item__heading__level">51%</span>
+                        <span class="section__skills__category__item__heading__level">39%</span>
                     </div>
                     <div class="section__skills__category__item__progress-bar">
                         <div class="section__skills__category__item__progress-bar__loaded" style="width: 51% !important;"></div>
