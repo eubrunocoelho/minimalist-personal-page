@@ -13,6 +13,17 @@
                         <button class="button button--icon">Enviar<i class="fa-regular fa-paper-plane button__icon"></i></button>
                     </div>
                 </form>
+                <div class="section__contact__form__alerts">
+                    <div class="section__contact__form__alerts__alert">
+                        <p>Mensagem padrão.</p>
+                    </div>
+                    <div class="section__contact__form__alerts__alert">
+                        <p>Mensagem de erro.</p>
+                    </div>
+                    <div class="section__contact__form__alerts__alert">
+                        <p>Mensagem de sucesso.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
