@@ -356,6 +356,60 @@ body {
             }
         }
     }
+
+    /**
+    * =================================================================================
+    * CONTACT
+    * =================================================================================
+    */
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &__input-text {
+                background: var(--input-text-background-color);
+                border: 2px solid var(--input-text-border-color);
+                border-radius: 0;
+                color: var(--input-text-color);
+                font-family: var(--font-cascadia-code);
+                font-size: 14px;
+                font-weight: 200;
+                height: 40px;
+                margin: 0 0 24px 0;
+                outline: none;
+                padding: 0 18px 0 18px;
+                width: 100%;
+            }
+
+            &__textarea {
+                background: var(--textarea-background-color);
+                border: 2px solid var(--textarea-border-color);
+                border-radius: none;
+                color: var(--text-area-color);
+                font-family: var(--font-cascadia-code);
+                font-size: 14px;
+                font-weight: 200;
+                height: 166px;
+                margin: 0 0 24px 0;
+                outline: none;
+                padding: 14px 18px 14px 18px;
+                resize: none;
+                width: 100%;
+            }
+
+            &__button-area {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
 }
 
 /**
