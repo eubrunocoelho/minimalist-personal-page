@@ -421,8 +421,10 @@ body {
 
         &__items {
             display: flex;
+            flex: 1;
             flex-direction: column;
             row-gap: 20px;
+            width: 100%;
 
             &__item {
                 display: flex;
@@ -726,6 +728,15 @@ body {
 
             &__summary {
                 width: 562px;
+            }
+        }
+
+        &__contact {
+            column-gap: 30px;
+            flex-direction: row;
+
+            &__form {
+                width: 396px;
             }
         }
     }
