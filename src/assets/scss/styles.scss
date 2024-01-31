@@ -1,6 +1,7 @@
 @import './../css/reset.css';
 @import './../css/cascadia-code.css';
 @import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
 @import './global.scss';
 @import './colors.scss';
 @import './components.scss';
@@ -137,6 +138,10 @@ body {
     padding: 0 10px 0 10px;
     margin: 0 0 90px 0;
     width: 100%;
+
+    &:last-child {
+        margin: 0 0 0 0;
+    }
 
     /**
     * =================================================================================
@@ -362,6 +367,7 @@ body {
     &__contact {
         display: flex;
         flex-direction: column;
+        row-gap: 50px;
         width: 100%;
 
         &__form {
@@ -410,6 +416,49 @@ body {
                 flex-direction: column;
                 row-gap: 20px;
                 margin: 24px 0 0 0;
+            }
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            &__item {
+                display: flex;
+                width: 100%;
+
+                &__icon {
+                    align-items: center;
+                    color: var(--contact-icon-color);
+                    display: flex;
+                    font-size: 38px;
+                    height: 62px;
+                    justify-content: center;
+                    width: 62px;
+                }
+
+                &__description {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    &__title {
+                        color: var(--font-title-primary-color);
+                        font-family: var(--font-cascadia-code);
+                        font-size: 21px;
+                        font-weight: 600;
+                    }
+
+                    &__description {
+                        color: var(--font-title-secondary-color);
+                        font-family: var(--font-poppins);
+                        font-size: 13px;
+                        font-weight: 400;
+                        margin: 4px 0 0 0;
+                    }
+                }
             }
         }
     }
