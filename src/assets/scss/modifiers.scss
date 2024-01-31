@@ -1,3 +1,23 @@
+.alert {
+    &--danger {
+        background: var(--alert-danger-background-color) !important;
+        border-left: 4px solid var(--alert-danger-border-color) !important;
+        color: var(--alert-danger-text-color) !important;
+    }
+
+    &--success {
+        background: var(--alert-success-background-color) !important;
+        border-left: 4px solid var(--alert-success-border-color) !important;
+        color: var(--alert-success-text-color) !important;
+    }
+}
+
+.button {
+    &--icon {
+        padding: 0 20px 0 16px !important;
+    }
+}
+
 .text {
     &--assent-color {
         color: var(--text-assent-color) !important
