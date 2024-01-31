@@ -11,13 +11,19 @@
     line-height: 0;
     padding: 0 20px 0 20px;
     text-transform: uppercase;
-
-    &--icon {
-        padding: 0 20px 0 16px !important;
-    }
-
+    
     &__icon {
         font-size: 20px;
         margin: 0 0 0 10px;
     }
+}
+
+.alert {
+    background: var(--alert-default-background-color);
+    border-left: 4px solid var(--alert-default-border-color);
+    color: var(--alert-default-text-color);
+    font-family: var(--font-cascadia-code);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 18px 20px 18px;
 }
