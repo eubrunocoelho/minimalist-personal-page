@@ -14,13 +14,13 @@
                     </div>
                 </form>
                 <div class="section__contact__form__alerts">
-                    <div class="section__contact__form__alerts__alert">
+                    <div class="alert">
                         <p>Mensagem padrão.</p>
                     </div>
-                    <div class="section__contact__form__alerts__alert">
+                    <div class="alert alert--danger">
                         <p>Mensagem de erro.</p>
                     </div>
-                    <div class="section__contact__form__alerts__alert">
+                    <div class="alert alert--success">
                         <p>Mensagem de sucesso.</p>
                     </div>
                 </div>
