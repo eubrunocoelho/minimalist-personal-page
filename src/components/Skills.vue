@@ -3,193 +3,193 @@
         <VueHeading title="Habilidades" description="Conhecimento Técnico"></VueHeading>
         <div class="section__skills">
             <!-- FRONT-END -->
-            <div class="section__skills__category">
-                <h2 class="section__skills__category__title">Front-End</h2>
+            <div class="skills__category">
+                <h2 class="skills__header">Front-End</h2>
                 <!-- HTML -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--html"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--html"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">HTML5</h3>
-                        <span class="section__skills__category__item__heading__level">85%</span>
+                        <h3 class="skills__title">HTML5</h3>
+                        <span class="skills__level">85%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 85% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 85% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS HTML -->
                 <!-- CSS -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--css"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--css"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">CSS3</h3>
-                        <span class="section__skills__category__item__heading__level">78%</span>
+                        <h3 class="skills__title">CSS3</h3>
+                        <span class="skills__level">78%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 78% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 78% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS CSS -->
                 <!-- JAVASCRIPT -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--javascript"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--javascript"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">JavaScript</h3>
-                        <span class="section__skills__category__item__heading__level">59%</span>
+                        <h3 class="skills__title">JavaScript</h3>
+                        <span class="skills__level">69%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 59% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 69% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS JAVASCRIPT -->
                 <!-- TYPESCRIPT -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--typescript"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--typescript"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">TypeScript</h3>
-                        <span class="section__skills__category__item__heading__level">22%</span>
+                        <h3 class="skills__title">TypeScript</h3>
+                        <span class="skills__level">19%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 22% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 19% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS TYPESCRIPT -->
             </div>
             <!-- ENDS FRONT-END -->
-            <!-- BACK-END-->
-            <div class="section__skills__category">
-                <h2 class="section__skills__category__title">Back-End</h2>
+            <!-- BACK-END -->
+            <div class="skills__category">
+                <h2 class="skills__header">Back-End</h2>
                 <!-- PHP -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--php"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--php"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">PHP</h3>
-                        <span class="section__skills__category__item__heading__level">69%</span>
+                        <h3 class="skills__title">PHP</h3>
+                        <span class="skills__level">69%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 69% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 69% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS PHP -->
                 <!-- NODE.JS -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--nodejs"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--nodejs"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Node.js</h3>
-                        <span class="section__skills__category__item__heading__level">33%</span>
+                        <h3 class="skills__title">Node.js</h3>
+                        <span class="skills__level">33%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 33% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 33% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS NODE.JS -->
                 <!-- JAVA -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--java"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--java"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Java</h3>
-                        <span class="section__skills__category__item__heading__level">11%</span>
+                        <h3 class="skills__title">Java</h3>
+                        <span class="skills__level">13%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 11% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 13% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS JAVA -->
             </div>
             <!-- ENDS BACK-END -->
-            <!-- DATABASE -->
-            <div class="section__skills__category">
-                <h2 class="section__skills__category__title">Banco de Dados</h2>
+            <!-- BANCO DE DADOS -->
+            <div class="skills__category">
+                <h2 class="skills__header">Banco de Dados</h2>
                 <!-- MYSQL -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--mysql"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--mysql"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">MySQL</h3>
-                        <span class="section__skills__category__item__heading__level">48%</span>
+                        <h3 class="skills__title">MySQL</h3>
+                        <span class="skills__level">45%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 49% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 45% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS MYSQL -->
                 <!-- SQL SERVER -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--sqlserver"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--sqlserver"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">SQL Server</h3>
-                        <span class="section__skills__category__item__heading__level">36%</span>
+                        <h3 class="skills__title">SQL Server</h3>
+                        <span class="skills__level">39%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 36% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 39% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS SQL SERVER -->
             </div>
-            <!-- ENDS DATABASE -->
+            <!-- ENDS BANCO DE DADOS -->
             <!-- FRAMEWORKS -->
-            <div class="section__skills__category">
-                <h2 class="section__skills__category__title">Frameworks</h2>
-                <!-- LARAVEL -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--laravel"></i>
+            <div class="skills__category">
+                <h2 class="skills__header">Frameworks</h2>
+                <!-- MYSQL -->
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--laravel"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Laravel</h3>
-                        <span class="section__skills__category__item__heading__level">31%</span>
+                        <h3 class="skills__title">Laravel</h3>
+                        <span class="skills__level">38%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 31% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 38% !important;"></div>
                     </div>
                 </div>
-                <!-- ENDS LARAVEL -->
+                <!-- ENDS MYSQL -->
                 <!-- VUE.JS -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--vuejs"></i>
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--sqlserver"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Vue.js</h3>
-                        <span class="section__skills__category__item__heading__level">39%</span>
+                        <h3 class="skills__title">Vue.js</h3>
+                        <span class="skills__level">42%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 51% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 42% !important;"></div>
                     </div>
                 </div>
                 <!-- ENDS VUE.JS -->
-                <!-- EXPRESS -->
-                <div class="section__skills__category__item">
-                    <div class="section__skills__category__item__heading">
-                        <span class="section__skills__category__item__heading__icon">
-                            <i class="section__skills__category__item__heading__icon-inner icon--express"></i>
+                <!-- EXPRESS.JS -->
+                <div class="skills__data">
+                    <div class="skills__heading">
+                        <span class="skills__icon">
+                            <i class="skills__icon-inner icon--express"></i>
                         </span>
-                        <h3 class="section__skills__category__item__heading__title">Express.js</h3>
-                        <span class="section__skills__category__item__heading__level">31%</span>
+                        <h3 class="skills__title">Express.js</h3>
+                        <span class="skills__level">32%</span>
                     </div>
-                    <div class="section__skills__category__item__progress-bar">
-                        <div class="section__skills__category__item__progress-bar__loaded" style="width: 31% !important;"></div>
+                    <div class="skills__progress-bar">
+                        <div class="skills__loaded" style="width: 32% !important;"></div>
                     </div>
                 </div>
-                <!-- ENDS EXPRESS -->
+                <!-- ENDS EXPRESS.JS -->
             </div>
-            <!-- ENDS FRAMEWORKS-->
+            <!-- ENDS FRAMEWORKS -->
         </div>
     </section>
 </template>
@@ -205,7 +205,7 @@ export default {
 
 <style scoped>
 .icon--html {
-    background: url(../assets/img/icons/html.svg);
+    background: url(../assets/img/icons/html.svg) !important;
 }
 
 .icon--css {
