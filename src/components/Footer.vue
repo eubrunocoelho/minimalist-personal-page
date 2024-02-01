@@ -2,41 +2,41 @@
     <footer class="footer">
         <div class="footer-container">
             <nav class="footer__nav">
-                <div class="footer__nav__title">
-                    <h1 class="footer__nav__title__heading">Bruno Coelho</h1>
-                    <p class="footer__nav__title__description">Desenvolvedor Full-Stack</p>
+                <div class="footer__heading">
+                    <h1 class="footer__title">Bruno Coelho</h1>
+                    <p class="footer__subtitle">Desenvolvedor Full-Stack</p>
                 </div>
-                <ul class="footer__nav__menu">
+                <ul class="footer__menu">
                     <li>
-                        <a href="#" class="footer__nav__menu__link">Sobre</a>
+                        <a href="#" class="footer__link">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__nav__menu__link">Habilidades</a>
+                        <a href="#" class="footer__link">Habilidades</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__nav__menu__link">Contato</a>
+                        <a href="#" class="footer__link">Contato</a>
                     </li>
                 </ul>
-                <ul class="footer__nav__socials">
-                    <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__item__link">
+                <ul class="footer__socials">
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__socials-link">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
-                    <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__item__link">
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__socials-link">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
-                    <li class="footer__nav__socials__item">
-                        <a href="#" class="footer__nav__socials__item__link">
+                    <li class="footer__socials-item">
+                        <a href="#" class="footer__socials-link">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="footer__copy">
-                <p class="footer__copy__text">© Copyright 2024 - Desenvolvido por Bruno Coelho</p>
+                <p class="footer__text">© Copyright 2024 - Desenvolvido por Bruno Coelho</p>
             </div>
         </div>
     </footer>

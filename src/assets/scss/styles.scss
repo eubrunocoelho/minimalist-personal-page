@@ -510,59 +510,59 @@ body {
         display: flex;
         flex-direction: column;
         margin: 44px 0 40px 0;
+    }
 
-        &__title {
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        justify-content: center;
+    }
+
+    &__title {
+        color: var(--footer-text-color);
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        color: var(--footer-text-color);
+        font-size: 18px;
+        font-weight: 400;
+        margin: 6px 0 0 0;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 30px 0;
+        row-gap: 18px;
+    }
+
+    &__link {
+        color: var(--link-menu-color);
+        font-size: 17px;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__socials {
+        column-gap: 10px;
+        display: flex;
+
+        &-item {
+            align-items: center;
             display: flex;
-            flex-direction: column;
-            height: 70px;
+            font-size: 26px;
+            height: 36px;
             justify-content: center;
-
-            &__heading {
-                color: var(--footer-text-color);
-                font-size: 35px;
-                font-weight: 600;
-            }
-
-            &__description {
-                color: var(--footer-text-color);
-                font-size: 18px;
-                font-weight: 400;
-                margin: 6px 0 0 0;
-            }
+            width: 36px;
         }
 
-        &__menu {
-            display: flex;
-            flex-direction: column;
-            margin: 30px 0 30px 0;
-            row-gap: 18px;
-
-            &__link {
-                color: var(--link-menu-color);
-                font-size: 17px;
-                font-weight: 300;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-        }
-
-        &__socials {
-            column-gap: 10px;
-            display: flex;
-
-            &__item {
-                align-items: center;
-                display: flex;
-                font-size: 26px;
-                height: 36px;
-                justify-content: center;
-                width: 36px;
-
-                &__link {
-                    color: var(--footer-icon-color);
-                    text-decoration: none;
-                }
-            }
+        &-link {
+            color: var(--footer-icon-color);
+            text-decoration: none;
         }
     }
 
@@ -570,12 +570,12 @@ body {
         line-height: 1.2;
         padding: 10px 0 10px 0;
         text-align: center;
+    }
 
-        &__text {
-            color: var(--footer-text-color);
-            font-size: 14px;
-            font-weight: 100;
-        }
+    &__text {
+        color: var(--footer-text-color);
+        font-size: 14px;
+        font-weight: 100;
     }
 }
 
@@ -741,22 +741,22 @@ body {
             flex-direction: row;
             height: 100%;
             margin: 20px 0 40px 0;
+        }
 
-            &__title {
-                height: 100%;
-            }
+        &__heading {
+            height: 100%;
+        }
 
-            &__menu {
-                align-items: center;
-                flex: 1;
-                margin: 20px 0 20px 0;
-                width: 100%;
-            }
+        &__menu {
+            align-items: center;
+            flex: 1;
+            margin: 20px 0 20px 0;
+            width: 100%;
+        }
 
-            &__socials {
-                justify-content: center;
-                width: 200px;
-            }
+        &__socials {
+            justify-content: center;
+            width: 200px;
         }
     }
 }
@@ -859,20 +859,20 @@ body {
 
         &__nav {
             margin: 20px 0 100px 0;
+        }
 
-            &__title {
-                height: 70px;
-            }
+        &__heading {
+            height: 70px;
+        }
 
-            &__menu {
-                column-gap: 18px;
-                flex-direction: row;
-                justify-content: center;
-            }
+        &__menu {
+            column-gap: 18px;
+            flex-direction: row;
+            justify-content: center;
+        }
 
-            &__socials {
-                width: 248px;
-            }
+        &__socials {
+            width: 248px;
         }
     }
 }
