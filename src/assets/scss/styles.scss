@@ -73,13 +73,6 @@ body {
         justify-content: center;
         row-gap: 5px;
         width: 40px;
-
-        &__line {
-            background: var(--toggle-box-line-color);
-            display: block;
-            height: 2px;
-            width: 25px;
-        }
     }
 
     &__logo {
@@ -92,26 +85,37 @@ body {
         flex: 1;
         justify-content: end;
         width: 100%;
+    }
 
-        &__menu {
-            display: none;
-        }
+    &__menu {
+        display: none;
+    }
 
-        &__theme-switch {
-            align-items: center;
-            cursor: pointer;
-            display: flex;
-            height: 30px;
-            justify-content: center;
-            margin: 0 0 0 0;
-            padding: 0 0 0 0;
-            width: 30px;
+    &__theme-switch {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        width: 30px;
+    }
+}
 
-            &__icon {
-                color: var(--toggle-theme-icon-color);
-                font-size: 21px;
-            }
-        }
+.toggle-box {
+    &__line {
+        background: var(--toggle-box-line-color);
+        display: block;
+        height: 2px;
+        width: 25px;
+    }
+}
+
+.theme-switch {
+    &__icon {
+        color: var(--toggle-theme-icon-color);
+        font-size: 21px;
     }
 }
 
@@ -590,21 +594,19 @@ body {
             display: none;
         }
 
-        &__nav {
-            &__menu {
-                column-gap: 22px;
-                display: flex;
-                margin: 0 18px 0 0;
+        &__menu {
+            column-gap: 22px;
+            display: flex;
+            margin: 0 18px 0 0;
+        }
 
-                &__link {
-                    color: var(--link-menu-color);
-                    font-family: var(--font-cascadia-code);
-                    font-size: 17px;
-                    font-weight: 300;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-            }
+        &__link {
+            color: var(--link-menu-color);
+            font-family: var(--font-cascadia-code);
+            font-size: 17px;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     }
 
