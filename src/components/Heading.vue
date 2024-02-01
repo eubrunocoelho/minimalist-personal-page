@@ -13,7 +13,7 @@ export default {
             required: true,
             type: String
         },
-        description: {
+        subtitle: {
             required: true,
             type: String
         }
