@@ -2,18 +2,18 @@
     <section class="section">
         <VueHeading title="Contato" description="Entre em Contato"></VueHeading>
         <div class="section__contact">
-            <div class="section__contact__form">
+            <div class="contact__form">
                 <form action="">
-                    <input type="text" class="section__contact__form__input-text" placeholder="Digite seu nome...">
-                    <input type="text" class="section__contact__form__input-text" placeholder="Digite seu telefone/whatsapp...">
-                    <input type="text" class="section__contact__form__input-text" placeholder="Digite seu endereço de e-mail...">
-                    <input type="text" class="section__contact__form__input-text" placeholder="Digite o assunto...">
-                    <textarea class="section__contact__form__textarea" placeholder="Escreva sua mensagem..."></textarea>
-                    <div class="section__contact__form__button-area">
+                    <input type="text" class="form__input-text" placeholder="Digite seu nome...">
+                    <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp...">
+                    <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail...">
+                    <input type="text" class="form__input-text" placeholder="Digite o assunto...">
+                    <textarea class="form__textarea" placeholder="Escreva sua mensagem..."></textarea>
+                    <div class="form__button-area">
                         <button class="button button--icon">Enviar<i class="fa-regular fa-paper-plane button__icon"></i></button>
                     </div>
                 </form>
-                <div class="section__contact__form__alerts">
+                <div class="form__alerts">
                     <div class="alert">
                         <p>Mensagem padrão.</p>
                     </div>
@@ -25,31 +25,31 @@
                     </div>
                 </div>
             </div>
-            <div class="section__contact__items">
+            <div class="contact__information">
                 <!-- WHATSAPP -->
-                <div class="section__contact__items__item">
-                    <span class="section__contact__items__item__icon"><i class="fa-brands fa-whatsapp"></i></span>
-                    <div class="section__contact__items__item__description">
-                        <h2 class="section__contact__items__item__description__title">WhatsApp</h2>
-                        <p class="section__contact__items__item__description__description">(41) 98738-9397</p>
+                <div class="contact__data">
+                    <span class="contact__icon"><i class="fa-brands fa-whatsapp"></i></span>
+                    <div class="contact__description">
+                        <h2 class="contact__title">WhatsApp</h2>
+                        <p class="contact__subtitle">(41) 98738-9397</p>
                     </div>
                 </div>
                 <!-- ENDS WHATSAPP -->
                 <!-- E-MAIL -->
-                <div class="section__contact__items__item">
-                    <span class="section__contact__items__item__icon"><i class="fa-regular fa-envelope"></i></span>
-                    <div class="section__contact__items__item__description">
-                        <h2 class="section__contact__items__item__description__title">E-mail</h2>
-                        <p class="section__contact__items__item__description__description">eu.brunocoelho94@gmail.com</p>
+                <div class="contact__data">
+                    <span class="contact__icon"><i class="fa-regular fa-envelope"></i></span>
+                    <div class="contact__description">
+                        <h2 class="contact__title">E-mail</h2>
+                        <p class="contact__subtitle">eu.brunocoelho94@gmail.com</p>
                     </div>
                 </div>
                 <!-- ENDS E-MAIL -->
                 <!-- LOCATION -->
-                <div class="section__contact__items__item">
-                    <span class="section__contact__items__item__icon"><i class="fa-solid fa-location-dot"></i></span>
-                    <div class="section__contact__items__item__description">
-                        <h2 class="section__contact__items__item__description__title">Localização</h2>
-                        <p class="section__contact__items__item__description__description">São José dos Pinhais/PR - Brasil</p>
+                <div class="contact__data">
+                    <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="contact__description">
+                        <h2 class="contact__title">Localização</h2>
+                        <p class="contact__subtitle">São José dos Pinhais/PR - Brasil</p>
                     </div>
                 </div>
                 <!-- END LOCATION -->
