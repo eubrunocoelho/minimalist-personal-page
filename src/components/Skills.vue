@@ -1,6 +1,6 @@
 <template>
     <section class="section">
-        <VueHeading title="Habilidades" description="Conhecimento Técnico"></VueHeading>
+        <VueHeading title="Habilidades" subtitle="Conhecimento Técnico"></VueHeading>
         <div class="section__skills">
             <!-- FRONT-END -->
             <div class="skills__category">

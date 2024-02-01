@@ -1,6 +1,6 @@
 <template>
     <section class="section">
-        <VueHeading title="Contato" description="Entre em Contato"></VueHeading>
+        <VueHeading title="Contato" subtitle="Entre em Contato"></VueHeading>
         <div class="section__contact">
             <div class="contact__form">
                 <form action="">

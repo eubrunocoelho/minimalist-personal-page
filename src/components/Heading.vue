@@ -1,7 +1,7 @@
 <template>
     <div class="section__heading">
-        <h1 class="section__heading__title">{{ title }}</h1>
-        <p class="section__heading__description">{{ description }}</p>
+        <h1 class="heading__title">{{ title }}</h1>
+        <p class="heading__subtitle">{{ subtitle }}</p>
     </div>
 </template>
 
