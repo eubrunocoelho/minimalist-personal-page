@@ -146,13 +146,15 @@ body {
     &:last-child {
         margin: 0 0 0 0;
     }
+}
 
-    /**
-    * =================================================================================
-    * SECTION HEADING
-    * =================================================================================
-    */
+/**
+* =================================================================================
+* SECTION HEADING
+* =================================================================================
+*/
 
+.section {
     &__heading {
         align-items: center;
         display: flex;
@@ -160,20 +162,22 @@ body {
         font-family: var(--font-cascadia-code);
         margin: 0 0 30px 0;
         width: 100%;
+    }
+}
 
-        &__title {
-            color: var(--font-title-primary-color);
-            font-size: 34px;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
+.heading {
+    &__title {
+        color: var(--font-title-primary-color);
+        font-size: 34px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
 
-        &__description {
-            color: var(--font-title-secondary-color);
-            font-size: 16px;
-            font-weight: 500;
-            margin: 7px 0 0 0;
-        }
+    &__subtitle {
+        color: var(--font-title-secondary-color);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 7px 0 0 0;
     }
 }
 
@@ -630,17 +634,7 @@ body {
 
     .section {
         padding: 0 30px 0 30px;
-
-        &__heading {
-            &__title {
-                font-size: 37px;
-            }
-
-            &__description {
-                margin: 5px 0 0 0;
-            }
-        }
-
+        
         &__about {
             display: flex;
             justify-content: space-between;
@@ -656,6 +650,16 @@ body {
         &__contact {
             column-gap: 18px;
             flex-direction: row;
+        }
+    }
+
+    .heading {
+        &__title {
+            font-size: 37px;
+        }
+
+        &__subtitle {
+            margin: 5px 0 0 0;
         }
     }
 
@@ -813,17 +817,6 @@ body {
     }
 
     .section {
-        &__heading {
-            &__title {
-                font-size: 41px;
-            }
-
-            &__description {
-                font-size: 18px;
-                margin: 4px 0 0 0;
-            }
-        }
-
         &__presentation {
             width: 902px;
         }
@@ -837,6 +830,17 @@ body {
         &__contact {
             column-gap: 38px;
             width: 902px;
+        }
+    }
+
+    .heading {
+        &__title {
+            font-size: 41px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            margin: 4px 0 0 0;
         }
     }
 
