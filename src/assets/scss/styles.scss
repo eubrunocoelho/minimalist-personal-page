@@ -149,7 +149,7 @@ body {
 
     /**
     * =================================================================================
-    * HEADING
+    * SECTION HEADING
     * =================================================================================
     */
 
@@ -173,52 +173,6 @@ body {
             font-size: 16px;
             font-weight: 500;
             margin: 7px 0 0 0;
-        }
-    }
-
-    /**
-    * =================================================================================
-    * PRESENTATION
-    * =================================================================================
-    */
-
-    &__presentation {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        &__profile-img {
-            border: 4px solid var(--border-profile-img);
-            border-radius: 50%;
-            height: 196px;
-            width: 196px;
-        }
-
-        &__summary {
-            font-family: var(--font-cascadia-code);
-            margin: 30px 0 0 0;
-
-            &__title {
-                color: var(--font-title-primary-color);
-                font-size: 31px;
-                font-weight: 600;
-            }
-
-            &__text {
-                color: var(--font-title-secondary-color);
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.2;
-                margin: 14px 0 0 0;
-                text-align: center;
-            }
-
-            &__button-area {
-                display: flex;
-                justify-content: center;
-                margin: 18px 0 0 0;
-            }
         }
     }
 
@@ -472,6 +426,56 @@ body {
 
 /**
  * =================================================================================
+ * PRESENTATION
+ * =================================================================================
+ */
+
+.section {
+    &__presentation {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.presentation {
+    &__profile-img {
+        border: 4px solid var(--border-profile-img);
+        border-radius: 50%;
+        height: 196px;
+        width: 196px;
+    }
+
+    &__summary {
+        font-family: var(--font-cascadia-code);
+        margin: 30px 0 0 0;
+    }
+
+    &__title {
+        color: var(--font-title-primary-color);
+        font-size: 31px;
+        font-weight: 600;
+    }
+
+    &__text {
+        color: var(--font-title-secondary-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 14px 0 0 0;
+        text-align: center;
+    }
+
+    &__button-area {
+        display: flex;
+        justify-content: center;
+        margin: 18px 0 0 0;
+    }
+}
+
+/**
+ * =================================================================================
  * FOOTER
  * =================================================================================
  */
@@ -672,30 +676,6 @@ body {
         &__presentation {
             flex-direction: row;
             margin: 0 auto;
-
-            &__profile-img {
-                height: 245px;
-                margin: 0 30px 0 0;
-                width: 245px;
-            }
-
-            &__summary {
-                margin: 0 0 0 0;
-
-                &__title {
-                    font-size: 37px;
-                }
-
-                &__text {
-                    font-size: 21px;
-                    text-align: start;
-                }
-
-                &__button-area {
-                    justify-content: start;
-                    margin: 22px 0 0 0;
-                }
-            }
         }
 
         &__skills {
@@ -704,6 +684,32 @@ body {
 
         &__contact {
             margin: 0 auto;
+        }
+    }
+
+    .presentation {
+        &__profile-img {
+            height: 245px;
+            margin: 0 30px 0 0;
+            width: 245px;
+        }
+
+        &__summary {
+            margin: 0 0 0 0;
+        }
+
+        &__title {
+            font-size: 37px;
+        }
+
+        &__text {
+            font-size: 21px;
+            text-align: start;
+        }
+
+        &__button-area {
+            justify-content: start;
+            margin: 22px 0 0 0;
         }
     }
 
