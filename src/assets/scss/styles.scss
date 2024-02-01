@@ -178,49 +178,6 @@ body {
 
     /**
     * =================================================================================
-    * ABOUT
-    * =================================================================================
-    */
-
-    &__about {
-        width: 100%;
-
-        &__summary {
-            height: 100%;
-            text-align: center;
-            width: 100%;
-
-            &__text {
-                color: var(--font-text-color);
-                font-family: var(--font-open-sans);
-                font-size: 16px;
-                font-weight: 400;
-            }
-        }
-
-        &__socials {
-            column-gap: 10px;
-            display: flex;
-            justify-content: center;
-            margin: 20px 0 0 0;
-
-            &__item {
-                align-items: center;
-                display: flex;
-                font-size: 28px;
-                height: 40px;
-                justify-content: center;
-                width: 40px;
-
-                &__link {
-                    color: var(--about-icon-color);
-                }
-            }
-        }
-    }
-
-    /**
-    * =================================================================================
     * SKILLS
     * =================================================================================
     */
@@ -475,6 +432,53 @@ body {
 }
 
 /**
+* =================================================================================
+* ABOUT
+* =================================================================================
+*/
+
+.section {
+    &__about {
+        width: 100%;
+    }
+}
+
+.about {
+    &__summary {
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__text {
+        color: var(--font-text-color);
+        font-family: var(--font-open-sans);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__socials {
+        column-gap: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+
+        &-item {
+            align-items: center;
+            display: flex;
+            font-size: 28px;
+            height: 40px;
+            justify-content: center;
+            width: 40px;
+        }
+
+        &-link {
+            color: var(--about-icon-color);
+        }
+    }
+}
+
+/**
  * =================================================================================
  * FOOTER
  * =================================================================================
@@ -632,19 +636,6 @@ body {
             justify-content: space-between;
             margin: 0 auto;
             width: 602px;
-
-            &__summary {
-                text-align: start;
-                width: 522px;
-            }
-
-            &__socials {
-                align-items: center;
-                flex-direction: column;
-                height: 100%;
-                margin: 0 0 0 0;
-                width: max-content;
-            }
         }
 
         &__skills {
@@ -659,6 +650,21 @@ body {
             &__form {
                 width: 344px;
             }
+        }
+    }
+
+    .about {
+        &__summary {
+            text-align: start;
+            width: 522px;
+        }
+
+        &__socials {
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            margin: 0 0 0 0;
+            width: max-content;
         }
     }
 
@@ -747,10 +753,6 @@ body {
     .section {
         &__about {
             width: 662px;
-
-            &__summary {
-                width: 562px;
-            }
         }
 
         &__contact {
@@ -759,6 +761,12 @@ body {
             &__form {
                 width: 396px;
             }
+        }
+    }
+
+    .about {
+        &__summary {
+            width: 562px;
         }
     }
 }
