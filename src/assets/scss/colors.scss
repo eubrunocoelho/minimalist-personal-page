@@ -1,40 +1,40 @@
 :root {
+    /*========== APP ==========*/
     --app-background-color: #eceff1;
-
+    /*========== HEADER ==========*/
     --header-background-color: #1a2026;
     --toggle-box-background-color: #27323e;
     --toggle-box-border-color: #000;
     --toggle-box-line-color: #eceff1;
     --toggle-theme-icon-color: #fff;
-
+    /*========== LINK ==========*/
     --link-menu-color: #fff;
-    
+    /*========== TYPOGRAPHY ==========*/
     --text-title-primary-color: #1a2026;
     --text-title-secondary-color: #5c6b89;
     --text-color: #5c6b89;
-
+    /*========== PRESENTATION ==========*/
     --border-profile-img: #fff;
     --button-border-color: #1a2026;
     --button-text-color: #1a2026;
     --text-assent-color: #66d866;
-
+    /*========== ABOUT ==========*/
     --about-icon-color: #1a2026;
-
+    /*========== SKILLS ==========*/
     --sub-heading-drop-line-color: #d2dde3;
-
     --icon-svg-color: invert(7%) sepia(4%) saturate(5060%) hue-rotate(170deg) brightness(94%) contrast(87%);
-
     --progress-bar-background-color: #eceff1;
     --progress-bar-border-color: #d2dde3;
     --progress-bar-loaded-color: #1a2026;
-
+    /*========== CONTACT ==========*/
     --input-text-background-color: #eceff1;
     --input-text-border-color: #1a2026;
     --input-text-text-color: #5c6b89;
     --textarea-background-color: #eceff1;
     --textarea-border-color: #1a2026;
     --textarea-text-color: #5c6b89;
-
+    --contact-icon-color: #1a2026;
+    /*========== ALERTS ==========*/
     --alert-default-background-color: #f5f8fc;
     --alert-default-border-color: #62a0eb;
     --alert-default-text-color: #62a0eb;
@@ -44,14 +44,13 @@
     --alert-success-background-color: #fafdfb;
     --alert-success-border-color: #4ade82;
     --alert-success-text-color: #4ade82;
-
-    --contact-icon-color: #1a2026;
-
+    /*========== FOOTER ==========*/
     --footer-background-color: #182431;
     --footer-text-color: #fff;
     --footer-icon-color: #fff;
 }
 
 [theme="dark"] {
+    /*========== APP ==========*/
     --app-background-color: #091a28;
 }
