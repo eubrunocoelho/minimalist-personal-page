@@ -22,8 +22,9 @@
                         <a href="#" class="header__link">Contato</a>
                     </li>
                 </ul>
-                <div class="header__theme-switch">
-                    <ion-icon name="sunny" class="theme-switch__icon"></ion-icon>
+                <div class="header__theme-switch" @click="switchTheme">
+                    <ion-icon name="sunny" class="theme-switch__icon" v-if="darkMode === false"></ion-icon>
+                    <ion-icon name="moon" class="theme-switch__icon" v-else></ion-icon>
                 </div>
             </nav>
         </div>
@@ -32,6 +33,42 @@
 
 <script>
 export default {
-    name: 'VueHeader'
+    name: 'VueHeader',
+    data() {
+        return {
+            darkMode: false
+        };
+    },
+    mounted() {
+        let htmlElement = document.documentElement;
+        let theme = localStorage.getItem('theme');
+
+        if (theme === 'light') {
+            htmlElement.setAttribute('theme', 'light');
+
+            this.darkMode = false;
+        } else {
+            htmlElement.setAttribute('theme', 'dark');
+            
+            this.darkMode = true;
+        }
+    },
+    methods: {
+        switchTheme() {
+			let htmlElement = document.documentElement;
+
+            if (!this.darkMode) {
+				localStorage.setItem('theme', 'dark');
+                htmlElement.setAttribute('theme', 'dark');
+
+                this.darkMode = true;
+            } else {
+				localStorage.setItem('theme', 'light');
+                htmlElement.setAttribute('theme', 'light');
+
+                this.darkMode = false;
+            }
+        }
+    }
 };
 </script>
