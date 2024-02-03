@@ -64,5 +64,52 @@
 
 [theme="dark"] {
     /*========== APP ==========*/
-    --app-background-color: #091a28;
+    --app-background-color: #272f37;
+    /*========== HEADER ==========*/
+    --header-background-color: #1a2026;
+    --toggle-box-background-color: #27323e;
+    --toggle-box-border-color: #000;
+    --toggle-box-line-color: #eceff1;
+    --toggle-theme-icon-color: #fff;
+    /*========== LINK ==========*/
+    --link-menu-color: #fff;
+    /*========== TYPOGRAPHY ==========*/
+    --text-title-primary-color: #4596ec;
+    --text-title-secondary-color: #d6dde4;
+    --text-color: #d6dde4;
+    /*========== PRESENTATION ==========*/
+    --border-profile-img: #1a2026;
+    --button-border-color: #1a2026;
+    --button-text-color: #4596ec;
+    --text-assent-color: #66d866;
+    /*========== ABOUT ==========*/
+    --about-icon-color: #4596ec;
+    /*========== SKILLS ==========*/
+    --sub-heading-drop-line-color: #475460;
+    --icon-svg-color: invert(38%) sepia(54%) saturate(900%) hue-rotate(174deg) brightness(97%) contrast(91%);
+    --progress-bar-background-color: #272f37;
+    --progress-bar-border-color: #475460;
+    --progress-bar-loaded-color: #1a2026;
+    /*========== CONTACT ==========*/
+    --input-text-background-color: #283038;
+    --input-text-border-color: #475460;
+    --input-text-text-color: #a1afbd;
+    --textarea-background-color: #283038;
+    --textarea-border-color: #475460;
+    --textarea-text-text-color: #a1afbd;
+    --contact-icon-color: #4596ec;
+    /*========== ALERTS ==========*/
+    --alert-default-background-color: #232930;
+    --alert-default-border-color: #62a0eb;
+    --alert-default-text-color: #62a0eb;
+    --alert-danger-background-color: #232930;
+    --alert-danger-border-color: #ff6a66;
+    --alert-danger-text-color: #ff6a66;
+    --alert-success-background-color: #232930;
+    --alert-success-border-color: #4ade82;
+    --alert-success-text-color: #4ade82;
+    /*========== FOOTER ==========*/
+    --footer-background-color: #1d242d;
+    --footer-text-color: #fff;
+    --footer-icon-color: #fff;
 }
