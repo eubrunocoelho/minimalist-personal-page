@@ -467,6 +467,10 @@ body {
         outline: none;
         padding: 0 18px 0 18px;
         width: 100%;
+
+        &::placeholder {
+            color: var(--input-text-text-color);
+        }
     }
 
     &__textarea {
@@ -483,6 +487,10 @@ body {
         padding: 14px 18px 14px 18px;
         resize: none;
         width: 100%;
+
+        &::placeholder {
+            color: var(--input-text-text-color);
+        }
     }
 
     &__button-area {
