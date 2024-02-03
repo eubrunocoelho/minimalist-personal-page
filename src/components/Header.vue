@@ -49,21 +49,21 @@ export default {
             this.darkMode = false;
         } else {
             htmlElement.setAttribute('theme', 'dark');
-            
+
             this.darkMode = true;
         }
     },
     methods: {
         switchTheme() {
-			let htmlElement = document.documentElement;
+            let htmlElement = document.documentElement;
 
             if (!this.darkMode) {
-				localStorage.setItem('theme', 'dark');
+                localStorage.setItem('theme', 'dark');
                 htmlElement.setAttribute('theme', 'dark');
 
                 this.darkMode = true;
             } else {
-				localStorage.setItem('theme', 'light');
+                localStorage.setItem('theme', 'light');
                 htmlElement.setAttribute('theme', 'light');
 
                 this.darkMode = false;
