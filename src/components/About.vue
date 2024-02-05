@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import VueHeading from './common/Heading.vue';
+import VueHeading from './Common/Heading.vue';
 
 export default {
     name: 'VueAbout',
