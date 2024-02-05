@@ -1,0 +1,55 @@
+/**
+ * =================================================================================
+ * ICONS
+ * =================================================================================
+ */
+
+.icon {
+    &--html {
+        background: url(../img/icons/html.svg) !important;
+    }
+
+    &--css {
+        background: url(../img/icons/css.svg);
+    }
+
+    &--javascript {
+        background: url(../img/icons/js.svg);
+    }
+
+    &--typescript {
+        background: url(../img/icons/ts.svg);
+    }
+
+    &--php {
+        background: url(../img/icons/php.svg);
+    }
+
+    &--nodejs {
+        background: url(../img/icons/nodejs.svg);
+    }
+
+    &--java {
+        background: url(../img/icons/java.svg);
+    }
+
+    &--mysql {
+        background: url(../img/icons/mysql.svg);
+    }
+
+    &--sqlserver {
+        background: url(../img/icons/sqlserver.svg);
+    }
+
+    &--laravel {
+        background: url(../img/icons/laravel.svg);
+    }
+
+    &--vuejs {
+        background: url(../img/icons/vuejs.svg);
+    }
+
+    &--express {
+        background: url(../img/icons/express.svg);
+    }
+}
