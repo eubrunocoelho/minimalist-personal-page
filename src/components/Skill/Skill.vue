@@ -1,5 +1,5 @@
 <template>
-    <div class="skills__data" v-for="(item, id) in   skills.items  " :key="id">
+    <div class="skills__data" v-for="(item, id) in skills.items" :key="id">
         <div class="skills__heading">
             <span class="skills__icon">
                 <i class="skills__icon-inner" :class="item.classIcon"></i>
