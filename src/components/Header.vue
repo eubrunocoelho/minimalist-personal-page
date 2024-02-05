@@ -43,31 +43,39 @@ export default {
         let htmlElement = document.documentElement;
         let theme = localStorage.getItem('theme');
 
-        if (theme === 'light') {
-            htmlElement.setAttribute('theme', 'light');
-
-            this.darkMode = false;
-        } else {
+        if (theme === 'dark') {
             htmlElement.setAttribute('theme', 'dark');
-
             this.darkMode = true;
+        } else {
+            htmlElement.setAttribute('theme', 'light');
+            this.darkMode = false;
         }
     },
     methods: {
         switchTheme() {
             let htmlElement = document.documentElement;
 
-            if (!this.darkMode) {
-                localStorage.setItem('theme', 'dark');
-                htmlElement.setAttribute('theme', 'dark');
-
-                this.darkMode = true;
-            } else {
+            if (this.darkMode) {
                 localStorage.setItem('theme', 'light');
                 htmlElement.setAttribute('theme', 'light');
 
                 this.darkMode = false;
+            } else {
+                localStorage.setItem('theme', 'dark');
+                htmlElement.setAttribute('theme', 'dark');
+
+                this.darkMode = true;
             }
+
+            // if (!this.darkMode) {
+            //     localStorage.setItem('theme', 'dark');
+            //     htmlElement.setAttribute('theme', 'dark');
+            //     this.darkMode = true;
+            // } else {
+            //     localStorage.setItem('theme', 'light');
+            //     htmlElement.setAttribute('theme', 'light');
+            //     this.darkMode = false;
+            // }
         }
     }
 };
