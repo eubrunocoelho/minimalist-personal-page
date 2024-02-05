@@ -1,11 +1,9 @@
 <template>
     <div class="contact__form">
-        <form @submit.prevent="onSubmit(form.name, form.whatsapp, form.email, form.subject, form.message)">
+        <form @submit.prevent="onSubmit()">
             <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..."
-                v-model.trim="form.whatsapp">
-            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..."
-                v-model.trim="form.email">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." v-model.trim="form.whatsapp">
+            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email">
             <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject">
             <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"></textarea>
             <div class="form__button-area">
@@ -47,40 +45,17 @@ export default {
     validations() {
         return {
             form: {
-                name: {
-                    required
-                },
-                whatsapp: {
-                    required
-                },
-                email: {
-                    required
-                },
-                subject: {
-                    required
-                },
-                message: {
-                    required
-                }
+                name: { required },
+                whatsapp: { required },
+                email: { required },
+                subject: { required },
+                message: { required },
             }
         }
     },
     methods: {
-        onSubmit(name, whatsapp, email, subject, message) {
-            this.form.name = name;
-            this.v$.form.name.$touch();
-
-            this.form.whatsapp = whatsapp;
-            this.v$.form.whatsapp.$touch();
-
-            this.form.email = email;
-            this.v$.form.email.$touch();
-
-            this.form.subject = subject;
-            this.v$.form.subject.$touch();
-
-            this.form.message = message;
-            this.v$.form.message.$touch();
+        onSubmit() {
+            this.v$.form.$touch();
         }
     }
 };
