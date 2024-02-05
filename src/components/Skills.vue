@@ -164,7 +164,7 @@
                 <div class="skills__data">
                     <div class="skills__heading">
                         <span class="skills__icon">
-                            <i class="skills__icon-inner icon--sqlserver"></i>
+                            <i class="skills__icon-inner icon--vuejs"></i>
                         </span>
                         <h3 class="skills__title">Vue.js</h3>
                         <span class="skills__level">42%</span>
@@ -195,7 +195,7 @@
 </template>
 
 <script>
-import VueHeading from './Heading.vue';
+import VueHeading from './common/Heading.vue';
 
 export default {
     name: 'VueSkills',
