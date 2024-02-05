@@ -10,19 +10,14 @@
                 <h2 class="skills__header">Back-End</h2>
                 <VueSkill :skills="backend"></VueSkill>
             </div>
-            <!-- ENDS BACK-END -->
-            <!-- BANCO DE DADOS -->
             <div class="skills__category">
                 <h2 class="skills__header">Banco de Dados</h2>
                 <VueSkill :skills="database"></VueSkill>
             </div>
-            <!-- ENDS BANCO DE DADOS -->
-            <!-- FRAMEWORKS -->
             <div class="skills__category">
                 <h2 class="skills__header">Frameworks</h2>
                 <VueSkill :skills="frameworks"></VueSkill>
             </div>
-            <!-- ENDS FRAMEWORKS -->
         </div>
     </section>
 </template>
