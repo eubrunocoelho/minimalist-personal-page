@@ -54,7 +54,7 @@ body {
     background: var(--header-background-color);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.55);
     display: flex;
-    min-height: 64px;
+    min-height: 60px;
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -63,7 +63,7 @@ body {
         align-items: center;
         display: flex;
         margin: 0 auto;
-        min-height: 64px;
+        min-height: 60px;
         padding: 0 10px 0 10px;
         width: 100%;
     }
@@ -132,7 +132,7 @@ body {
  */
 
 .main {
-    margin: calc(50px + 64px) auto 60px;
+    margin: calc(50px + 60px) auto 60px;
     width: 100%;
 }
 
@@ -613,9 +613,9 @@ body {
             background: url(../img/logo.svg) center no-repeat;
             background-size: contain;
             display: block;
-            height: 58px;
+            height: 42px;
             text-indent: -99999px;
-            width: 170px;
+            width: 174px;
         }
     }
 }
