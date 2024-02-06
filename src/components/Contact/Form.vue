@@ -55,7 +55,8 @@ export default {
                     )
                 },
                 whatsapp: {
-                    required: helpers.withMessage('O campo "telefone" é obrigatório.', required)
+                    required: helpers.withMessage('O campo "telefone" é obrigatório.', required),
+                    regex: helpers.withMessage('O campo "telefone" está inválido.', helpers.regex(/^\([0-9]{2}\) [0-9]?[0-9]{4}-[0-9]{4}$/))
                 },
                 email: { 
                     required: helpers.withMessage('O campo "e-mail" é obrigatório.', required),
