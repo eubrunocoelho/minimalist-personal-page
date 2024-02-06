@@ -6,7 +6,7 @@
                 <h1 class="presentation__title">Olá, sou o Bruno</h1>
                 <p class="presentation__text">Desenvolvedor Full-Stack,<br /> criando <span class="text--assent-color">{</span> soluções para a web <span class="text--assent-color">}</span>.</p>
                 <div class="presentation__button-area">
-                    <button class="button button--icon">Contato<i class="fa-regular fa-paper-plane button__icon"></i></button>
+                    <button class="button button--icon">Contato</button>
                 </div>
             </div>
         </div>

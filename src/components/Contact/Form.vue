@@ -7,7 +7,7 @@
             <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject">
             <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"></textarea>
             <div class="form__button-area">
-                <button type="submit" class="button button--icon">Enviar<i class="fa-regular fa-paper-plane button__icon"></i></button>
+                <button type="submit" class="button button--icon">Enviar</button>
             </div>
         </form>
         <div class="form__alerts" v-if="(v$.form.$errors.length > 0)">
