@@ -281,6 +281,11 @@ body {
 
         &-link {
             color: var(--about-icon-color);
+            
+            &:hover {
+                color: var(--about-hover-icon-color);
+                transition: color 0.25s ease-in-out 0s;
+            }
         }
     }
 }
@@ -603,6 +608,11 @@ body {
         &-link {
             color: var(--footer-icon-color);
             text-decoration: none;
+
+            &:hover {
+                color: var(--footer-hover-icon-color);
+                transition: color 0.25s ease-in-out 0s;
+            }
         }
     }
 
