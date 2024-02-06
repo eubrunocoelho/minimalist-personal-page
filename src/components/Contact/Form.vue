@@ -2,7 +2,7 @@
     <div class="contact__form">
         <form @submit.prevent="onSubmit()">
             <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask" v-model.trim="form.whatsapp">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask" v-model.trim="form.phone">
             <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email">
             <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject">
             <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"></textarea>
@@ -35,7 +35,7 @@ export default {
         return {
             form: {
                 name: '',
-                whatsapp: '',
+                phone: '',
                 email: '',
                 subject: '',
                 message: ''
@@ -54,9 +54,9 @@ export default {
                         ({ $params }) => `O campo "nome" deve conter no máximo ${$params.max} caracteres.`, maxLength(128)
                     )
                 },
-                whatsapp: {
+                phone: {
                     required: helpers.withMessage('O campo "telefone" é obrigatório.', required),
-                    regex: helpers.withMessage('O campo "telefone" está inválido.', helpers.regex(/^\([0-9]{2}\) [0-9]?[0-9]{4}-[0-9]{4}$/))
+                    regex: helpers.withMessage('O formato de "telefone" deve ser (DD) 00000-0000 ou (DD) 0000-0000.', helpers.regex(/^\([0-9]{2}\) [0-9]?[0-9]{4}-[0-9]{4}$/))
                 },
                 email: { 
                     required: helpers.withMessage('O campo "e-mail" é obrigatório.', required),
@@ -88,7 +88,7 @@ export default {
     },
     methods: {
         phoneMask() {
-            let phoneValue = this.form.whatsapp.replace(/\D/g, '');
+            let phoneValue = this.form.phone.replace(/\D/g, '');
             let formattedValue = '';
 
             if (phoneValue.length > 0) {
@@ -106,7 +106,7 @@ export default {
                 }
             }
 
-            this.form.whatsapp = formattedValue;
+            this.form.phone = formattedValue;
         },
         onSubmit() {
             this.v$.form.$touch();
