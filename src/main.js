@@ -14,6 +14,6 @@ dom.watch();
 const app = createApp(App);
 
 app.config.ignoredElements = [/^ion-/];
-app.component('font-awesome-icon', FontAwesomeIcon);
 app.config.globalProperties.$log = log;
+app.component('font-awesome-icon', FontAwesomeIcon);
 app.mount('#app');
