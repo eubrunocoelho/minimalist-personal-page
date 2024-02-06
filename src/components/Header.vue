@@ -66,16 +66,6 @@ export default {
 
                 this.darkMode = true;
             }
-
-            // if (!this.darkMode) {
-            //     localStorage.setItem('theme', 'dark');
-            //     htmlElement.setAttribute('theme', 'dark');
-            //     this.darkMode = true;
-            // } else {
-            //     localStorage.setItem('theme', 'light');
-            //     htmlElement.setAttribute('theme', 'light');
-            //     this.darkMode = false;
-            // }
         }
     }
 };
