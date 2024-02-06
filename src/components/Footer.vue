@@ -36,7 +36,7 @@
                 </ul>
             </nav>
             <div class="footer__copy">
-                <p class="footer__text">© Copyright 2024 - Desenvolvido por Bruno Coelho</p>
+                <p class="footer__text">© Copyright 2024 - Desenvolvido por <span class="footer__dev">Bruno Coelho</span>.</p>
             </div>
         </div>
     </footer>
