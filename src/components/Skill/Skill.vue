@@ -5,10 +5,10 @@
                 <i class="skills__icon-inner" :class="item.classIcon"></i>
             </span>
             <h3 class="skills__title">{{ item.name }}</h3>
-            <span class="skills__level">{{ item.level }}</span>
+            <span class="skills__level">{{ item.beforeLevel + '%' }}</span>
         </div>
         <div class="skills__progress-bar">
-            <div class="skills__loaded" :style="{ width: item.level, 'important': true }"></div>
+            <div class="skills__loaded" :style="{ width: item.beforeLevel + '%', 'important': true, 'transition': 'width 0.5s' }"></div>
         </div>
     </div>
 </template>
