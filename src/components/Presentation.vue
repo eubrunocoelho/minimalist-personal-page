@@ -4,7 +4,7 @@
             <img src="./../assets/img/profile-img.png" class="presentation__profile-img">
             <div class="presentation__summary">
                 <h1 class="presentation__title">Olá, sou o Bruno</h1>
-                <p class="presentation__text">Desenvolvedor Full-Stack,<br /> criando <span class="text--assent-color">{</span> soluções para a web <span class="text--assent-color">}</span>.</p>
+                <p class="presentation__text">Desenvolvedor Full-Stack,<br /> criando <span class="text--assent-color">{</span> <span>soluções para a web</span> <span class="text--assent-color">}</span>.</p>
                 <div class="presentation__button-area">
                     <button class="button button--icon">Contato</button>
                 </div>
