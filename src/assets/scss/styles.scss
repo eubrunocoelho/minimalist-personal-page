@@ -66,6 +66,9 @@ body {
 
 .sidebar {
     background: var(--sidebar-background-color);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-cascadia-code);
     height: 100vh;
     overflow: auto;
     padding: 0 10px 0 10px;
@@ -73,12 +76,14 @@ body {
     width: 290px;
     z-index: calc(9999 - 1);
 
-    &__top {
-        align-items: center;
-        display: flex;
-        height: 64px;
-        justify-content: space-between;
-        border-bottom: 1px solid var(--sidebar-top-drop-line-color);
+    &-container {
+        position: relative;
+    }
+
+    &__button-wrapper {
+        right: 10px;
+        position: absolute;
+        top: 12px;
     }
 
     &__close-box {
@@ -91,6 +96,43 @@ body {
         justify-content: center;
         position: relative;
         width: 40px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin: 38px 0 98px 0;
+        padding: 0 0 0 10px;
+        row-gap: 26px;
+    }
+
+    &__link {
+        color: var(--link-menu-color);
+        font-size: 19px;
+        font-weight: 300;
+        text-decoration: none;
+        position: relative;
+        text-transform: capitalize;
+
+        &::before {
+            background: var(--hover-link-menu-color);
+            bottom: -2px;
+            content: "";
+            height: 4px;
+            position: absolute;
+            transform: scaleX(0);
+            transition: all 0.2s ease-in-out 0s;
+            transform-origin: left;
+            visibility: hidden;
+            width: calc(100% + 4px);
+        }
+
+        &:hover {
+            &::before {
+                transform: scaleX(1);
+                visibility: visible;
+            }
+        }
     }
 }
 
