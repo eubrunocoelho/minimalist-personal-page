@@ -92,23 +92,23 @@ body {
         border: 1px solid var(--close-box-border-color);
         cursor: pointer;
         display: flex;
-        height: 40px;
+        height: 44px;
         justify-content: center;
         position: relative;
-        width: 40px;
+        width: 44px;
     }
 
     &__menu {
         display: flex;
         flex-direction: column;
-        margin: 38px 0 98px 0;
+        margin: 42px 0 98px 0;
         padding: 0 0 0 10px;
-        row-gap: 26px;
+        row-gap: 36px;
     }
 
     &__link {
         color: var(--link-menu-color);
-        font-size: 19px;
+        font-size: 20px;
         font-weight: 300;
         text-decoration: none;
         position: relative;
@@ -140,12 +140,12 @@ body {
     &__line {
         background: var(--close-box-line-color);
         display: block;
-        height: 2px;
+        height: 3px;
         left: 50%;
         position: absolute;
         top: 50%;
         transform-origin: center;
-        width: 25px;
+        width: 29px;
 
         &:first-child {
             transform: translateX(-50%) translateY(-50%) rotate(45deg);
