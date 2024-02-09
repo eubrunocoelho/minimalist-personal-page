@@ -7,6 +7,14 @@
 :root {
     /*========== APP ==========*/
     --app-background-color: #eceff1;
+    /*========== WINDOW ==========*/
+    --window-overlay-color: rgba(42, 42, 42, .4);
+    /*========== SIDEBAR ==========*/
+    --sidebar-background-color: #1a2026;
+    --sidebar-top-drop-line-color: #101419;
+    --close-box-background-color: #27323e;
+    --close-box-border-color: #000;
+    --close-box-line-color: #eceff1;
     /*========== HEADER ==========*/
     --header-background-color: #1a2026;
     --toggle-box-background-color: #27323e;
@@ -71,6 +79,14 @@
 [theme="dark"] {
     /*========== APP ==========*/
     --app-background-color: #272f37;
+    /*========== WINDOW ==========*/
+    --window-overlay-color: rgba(42, 42, 42, .4);
+    /*========== SIDEBAR ==========*/
+    --sidebar-background-color: #1a2026;
+    --sidebar-top-drop-line-color: #101419;
+    --close-box-background-color: #27323e;
+    --close-box-border-color: #000;
+    --close-box-line-color: #eceff1;
     /*========== HEADER ==========*/
     --header-background-color: #1a2026;
     --toggle-box-background-color: #27323e;

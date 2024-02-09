@@ -46,6 +46,77 @@ body {
 
 /**
  * =================================================================================
+ * WINDOW-OVERLAY
+ * =================================================================================
+ */
+
+.window-overlay {
+    background: var(--window-overlay-color);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: calc(9999 - 2);
+}
+
+/**
+ * =================================================================================
+ * SIDEBAR
+ * =================================================================================
+ */
+
+.sidebar {
+    background: var(--sidebar-background-color);
+    height: 100vh;
+    overflow: auto;
+    padding: 0 10px 0 10px;
+    position: fixed;
+    width: 290px;
+    z-index: calc(9999 - 1);
+
+    &__top {
+        align-items: center;
+        display: flex;
+        height: 64px;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--sidebar-top-drop-line-color);
+    }
+
+    &__close-box {
+        align-items: center;
+        background: var(--close-box-background-color);
+        border: 1px solid var(--close-box-border-color);
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        position: relative;
+        width: 40px;
+    }
+}
+
+.close-box {
+    &__line {
+        background: var(--close-box-line-color);
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform-origin: center;
+        width: 25px;
+
+        &:first-child {
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+        }
+    }
+}
+
+/**
+ * =================================================================================
  * HEADER
  * =================================================================================
  */
@@ -58,7 +129,7 @@ body {
     min-height: 60px;
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: calc(9999 - 3);
 
     &-container {
         align-items: center;
@@ -286,7 +357,7 @@ body {
 
         &-link {
             color: var(--about-icon-color);
-            
+
             &:hover {
                 color: var(--about-hover-icon-color);
                 transition: color 0.25s ease-in-out 0s;
