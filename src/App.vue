@@ -1,5 +1,16 @@
 <template>
     <div id="app-container">
+        <div class="window-overlay">
+            <section class="sidebar">
+                <div class="sidebar__top">
+                    <div></div>
+                    <div class="sidebar__close-box">
+                        <span class="close-box__line"></span>
+                        <span class="close-box__line"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
         <VueHeader></VueHeader>
         <main class="main">
             <VuePresentation></VuePresentation>
