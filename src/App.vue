@@ -1,15 +1,7 @@
 <template>
     <div id="app-container">
         <div class="window-overlay">
-            <section class="sidebar">
-                <div class="sidebar__top">
-                    <div></div>
-                    <div class="sidebar__close-box">
-                        <span class="close-box__line"></span>
-                        <span class="close-box__line"></span>
-                    </div>
-                </div>
-            </section>
+            <VueSidebar></VueSidebar>
         </div>
         <VueHeader></VueHeader>
         <main class="main">
@@ -23,6 +15,7 @@
 </template>
 
 <script>
+import VueSidebar from './components/Sidebar.vue';
 import VueHeader from './components/Header.vue';
 import VuePresentation from './components/Presentation.vue';
 import VueAbout from './components/About.vue';
@@ -32,6 +25,6 @@ import VueFooter from './components/Footer.vue';
 
 export default {
     name: 'App',
-    components: { VueHeader, VuePresentation, VueAbout, VueSkills, VueContact, VueFooter }
+    components: { VueSidebar, VueHeader, VuePresentation, VueAbout, VueSkills, VueContact, VueFooter }
 }
 </script>
