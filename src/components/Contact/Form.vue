@@ -48,10 +48,10 @@ export default {
                 name: {
                     required: helpers.withMessage('O campo "nome" é obrigatório.', required),
                     minLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "nome" deve conter pelo menos ${$params.min} caracteres.`, minLength(3) }
+                        ({ $params }) => `O campo "nome" deve conter pelo menos ${$params.min} caracteres.`, minLength(3)
                     ),
                     maxLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "nome" deve conter no máximo ${$params.max} caracteres.`, maxLength(128) }
+                        ({ $params }) => `O campo "nome" deve conter no máximo ${$params.max} caracteres.`, maxLength(128)
                     )
                 },
                 phone: {
@@ -62,25 +62,25 @@ export default {
                     required: helpers.withMessage('O campo "e-mail" é obrigatório.', required),
                     email: helpers.withMessage('O campo "e-mail" está inválido.', email),
                     maxLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "e-mail" deve conter no máximo ${$params.max} caracteres.`, maxLength(128) }
+                        ({ $params }) => `O campo "e-mail" deve conter no máximo ${$params.max} caracteres.`, maxLength(128)
                     )
                 },
                 subject: {
                     required: helpers.withMessage('O campo "assunto" é obrigatório.', required),
                     minLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "assunto" deve conter pelo menos ${$params.min} caracteres.`, minLength(12) }
+                        ({ $params }) => `O campo "assunto" deve conter pelo menos ${$params.min} caracteres.`, minLength(12)
                     ),
                     maxLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "assunto" deve conter no máximo ${$params.max} caracteres.`, maxLength(128) }
+                        ({ $params }) => `O campo "assunto" deve conter no máximo ${$params.max} caracteres.`, maxLength(128)
                     )
                 },
                 message: {
                     required: helpers.withMessage('O campo "mensagem" é obrigatório.', required),
                     minLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "mensagem" deve conter pelo menos ${$params.min} caracteres.`, minLength(20) }
+                        ({ $params }) => `O campo "mensagem" deve conter pelo menos ${$params.min} caracteres.`, minLength(20)
                     ),
                     maxLength: helpers.withMessage(
-                        ({ $params }) => { `O campo "mensagem" deve conter no máximo ${$params.max} caracteres.`, maxLength(1200) }
+                        ({ $params }) => `O campo "mensagem" deve conter no máximo ${$params.max} caracteres.`, maxLength(1200)
                     )
                 },
             }
