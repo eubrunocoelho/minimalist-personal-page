@@ -2,21 +2,21 @@
     <section class="section">
         <VueHeading title="Habilidades" subtitle="Conhecimento Técnico"></VueHeading>
         <div class="section__skills">
-            <div class="skills__category">
-                <h2 class="skills__header" ref="frontend">Front-End</h2>
-                <VueSkill :skills="frontend"></VueSkill>
+            <div class="skills__category" ref="frontend">
+                <h2 class="skills__header">Front-End</h2>
+                <VueSkill :skills="skills.frontend"></VueSkill>
             </div>
-            <div class="skills__category">
-                <h2 class="skills__header" ref="backend">Back-End</h2>
-                <VueSkill :skills="backend"></VueSkill>
+            <div class="skills__category" ref="backend">
+                <h2 class="skills__header">Back-End</h2>
+                <VueSkill :skills="skills.backend"></VueSkill>
             </div>
-            <div class="skills__category">
-                <h2 class="skills__header" ref="database">Banco de Dados</h2>
-                <VueSkill :skills="database"></VueSkill>
+            <div class="skills__category" ref="database">
+                <h2 class="skills__header">Banco de Dados</h2>
+                <VueSkill :skills="skills.database"></VueSkill>
             </div>
             <div class="skills__category" ref="frameworks">
                 <h2 class="skills__header">Frameworks</h2>
-                <VueSkill :skills="frameworks"></VueSkill>
+                <VueSkill :skills="skills.frameworks"></VueSkill>
             </div>
         </div>
     </section>
@@ -31,93 +31,35 @@ export default {
     components: { VueHeading, VueSkill },
     data() {
         return {
-            frontend: {
-                items: [
-                    {
-                        beforeLevel: 1,
-                        name: 'HTML5',
-                        classIcon: 'icon--html',
-                        level: 85
-                    },
-                    {
-                        beforeLevel: 1,
-                        name: 'CSS3',
-                        classIcon: 'icon--css',
-                        level: 75
-                    },
-                    {
-                        beforeLevel: 1,
-                        name: 'JavaScript',
-                        classIcon: 'icon--javascript',
-                        level: 69
-                    },
-                    {
-                        beforeLevel: '1',
-                        name: 'TypeScript',
-                        classIcon: 'icon--typescript',
-                        level: 17
-                    }
-                ]
-            },
-            backend: {
-                items: [
-                    {
-                        beforeLevel: 1,
-                        name: 'PHP',
-                        classIcon: 'icon--php',
-                        level: 72
-                    },
-                    {
-                        beforeLevel: '1',
-                        name: 'Node.js',
-                        classIcon: 'icon--nodejs',
-                        level: 35
-                    },
-                    {
-                        beforeLevel: '1',
-                        name: 'Java',
-                        classIcon: 'icon--java',
-                        level: 13
-                    }
-                ]
-            },
-            database: {
-                items: [
-                    {
-                        beforeLevel: 1,
-                        name: 'MySQL',
-                        classIcon: 'icon--mysql',
-                        level: 49
-                    },
-                    {
-                        beforeLevel: '1',
-                        name: 'SQL Server',
-                        classIcon: 'icon--sqlserver',
-                        level: 36
-                    }
-                ]
-            },
-            frameworks: {
-                items: [
-                    {
-                        beforeLevel: 1,
-                        name: 'Laravel',
-                        classIcon: 'icon--laravel',
-                        level: 42
-                    },
-                    {
-                        beforeLevel: 1,
-                        name: 'Vue.js',
-                        classIcon: 'icon--vuejs',
-                        level: 47
-                    },
-                    {
-                        beforeLevel: '1',
-                        name: 'Express.js',
-                        classIcon: 'icon--expressjs',
-                        level: 31
-                    }
-                ]
+            skills: {
+                frontend: {
+                    items: [
+                        { beforeLevel: 1 /** do not modify */, name: 'HTML5', classIcon: 'icon--html', level: 85 },
+                        { beforeLevel: 1 /** do not modify */, name: 'CSS3', classIcon: 'icon--css', level: 75 },
+                        { beforeLevel: 1 /** do not modify */, name: 'JavaScript', classIcon: 'icon--javascript', level: 69 },
+                        { beforeLevel: 1 /** do not modify */, name: 'TypeScript', classIcon: 'icon--typescript', level: 17 }
+                    ]
+                },
+                backend: {
+                    items: [
+                        { beforeLevel: 1 /** do not modify */, name: 'PHP', classIcon: 'icon--php', level: 72 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Node.js', classIcon: 'icon--nodejs', level: 35 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Java', classIcon: 'icon--java', level: 13 }
+                    ]
+                },
+                database: {
+                    items: [
+                        { beforeLevel: 1 /** do not modify */, name: 'MySQL', classIcon: 'icon--mysql', level: 49 },
+                        { beforeLevel: 1 /** do not modify */, name: 'SQL Server', classIcon: 'icon--sqlserver', level: 36 }
+                    ]
+                },
+                frameworks: {
+                    items: [
+                        { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 42 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 47 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 31 }
+                    ]
+                }
             }
         }
     },
@@ -128,46 +70,21 @@ export default {
         scrollAnimation() {
             const visibleHeight = window.innerHeight + window.scrollY;
 
-            const items = {
-                frontend: this.$refs.frontend,
-                backend: this.$refs.backend,
-                database: this.$refs.database,
-                frameworks: this.$refs.frameworks
-            };
+            for (const category in this.skills) {
+                const categoryRef = this.$refs[category];
 
-            if (
-                items['frontend'] &&
-                items['backend'] &&
-                items['database'] &&
-                items['frameworks']
-            ) {
-                const
-                    frontendPosition = (items['frontend'].getBoundingClientRect().top + window.scrollY) + 110,
-                    backendPosition = (items['backend'].getBoundingClientRect().top + window.scrollY) + 110,
-                    databasePosistion = (items['database'].getBoundingClientRect().top + window.scrollY) + 110,
-                    frameworksPosition = (items['frameworks'].getBoundingClientRect().top + window.scrollY) + 110;
+                if (!categoryRef) continue;
 
-                if (visibleHeight > frontendPosition) {
-                    this.skillAnimation(this.frontend.items);
-                }
+                const categoryPosition = categoryRef.getBoundingClientRect().top + window.scrollY + 110;
 
-                if (visibleHeight > backendPosition) {
-                    this.skillAnimation(this.backend.items);
-                }
-
-                if (visibleHeight > databasePosistion) {
-                    this.skillAnimation(this.database.items);
-                }
-
-                if (visibleHeight > frameworksPosition) {
-                    this.skillAnimation(this.frameworks.items);
+                if (visibleHeight > categoryPosition) {
+                    this.loaderAnimation(this.skills[category].items);
                 }
             }
         },
-
-        skillAnimation(item) {
-            item.forEach(item => {
-                item.beforeLevel = item.level;
+        loaderAnimation(items) {
+            items.forEach((item) => {
+                item.beforeLevel = item.level
             });
         }
     }

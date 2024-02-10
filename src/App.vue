@@ -38,12 +38,10 @@ export default {
     },
     methods: {
         openSidebar() {
-            this.overlayIsVisible = true;
-            this.sidebarIsVisible = true;
+            [this.overlayIsVisible, this.sidebarIsVisible] = [true, true];
         },
         closeSidebar() {
-            this.overlayIsVisible = false;
-            this.sidebarIsVisible = false;
+            [this.overlayIsVisible, this.sidebarIsVisible] = [false, false];
         },
         isOverlay(event) {
             let windowOverlay = this.$refs.windowOverlay;
@@ -57,7 +55,6 @@ export default {
 </script>
 
 <style>
-
 /**
  * =================================================================================
  * VUE TRANSITIONS
