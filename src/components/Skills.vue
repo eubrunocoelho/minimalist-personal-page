@@ -122,10 +122,10 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('scroll', this.scroll);
+        window.addEventListener('scroll', this.scrollAnimation);
     },
     methods: {
-        scroll() {
+        scrollAnimation() {
             const visibleHeight = window.innerHeight + window.scrollY;
 
             const items = {
@@ -142,10 +142,10 @@ export default {
                 items['frameworks']
             ) {
                 const
-                    frontendPosition = (items['frontend'].getBoundingClientRect().top + window.scrollY) + 180,
-                    backendPosition = (items['backend'].getBoundingClientRect().top + window.scrollY) + 180,
-                    databasePosistion = (items['database'].getBoundingClientRect().top + window.scrollY) + 180,
-                    frameworksPosition = (items['frameworks'].getBoundingClientRect().top + window.scrollY) + 180;
+                    frontendPosition = (items['frontend'].getBoundingClientRect().top + window.scrollY) + 110,
+                    backendPosition = (items['backend'].getBoundingClientRect().top + window.scrollY) + 110,
+                    databasePosistion = (items['database'].getBoundingClientRect().top + window.scrollY) + 110,
+                    frameworksPosition = (items['frameworks'].getBoundingClientRect().top + window.scrollY) + 110;
 
                 if (visibleHeight > frontendPosition) {
                     this.skillAnimation(this.frontend.items);
