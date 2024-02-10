@@ -117,12 +117,12 @@ body {
         &::before {
             background: var(--hover-link-menu-color);
             bottom: -2px;
-            content: "";
+            content: '';
             height: 4px;
             position: absolute;
             transform: scaleX(0);
-            transition: all 0.2s ease-in-out 0s;
             transform-origin: left;
+            transition: all 0.2s ease-in-out 0s;
             visibility: hidden;
             width: calc(100% + 4px);
         }
@@ -692,19 +692,19 @@ body {
         &::before {
             background: var(--hover-link-menu-color);
             bottom: -2px;
-            content: "";
+            content: '';
             height: 4px;
-            left: 50%;
             position: absolute;
-            transform: translateX(-50%) scaleX(0);
+            transform: scaleX(0);
+            transform-origin: left;
             transition: all 0.2s ease-in-out 0s;
             visibility: hidden;
-            width: calc(100% + 8px);
+            width: calc(100% + 4px);
         }
 
         &:hover {
             &::before {
-                transform: translateX(-50%) scaleX(1);
+                transform: scaleX(1);
                 visibility: visible;
             }
         }
@@ -802,7 +802,7 @@ body {
             &::before {
                 background: var(--hover-link-menu-color);
                 bottom: -2px;
-                content: "";
+                content: '';
                 height: 4px;
                 left: 50%;
                 position: absolute;
@@ -946,6 +946,21 @@ body {
             flex: 1;
             margin: 20px 0 20px 0;
             width: 100%;
+        }
+
+        &__link {
+            &::before {
+                left: 50%;
+                transform: translateX(-50%) scaleX(0);
+                transform-origin: center;
+                width: calc(100% + 8px);
+            }
+
+            &:hover {
+                &::before {
+                    transform: translateX(-50%) scaleX(1);
+                }
+            }
         }
 
         &__socials {
