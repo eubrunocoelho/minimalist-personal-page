@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="header-container">
-            <div class="header__toggle-box">
+            <div class="header__toggle-box" @click="$emit('openSidebar')">
                 <span class="toggle-box__line"></span>
                 <span class="toggle-box__line"></span>
                 <span class="toggle-box__line"></span>

@@ -2,7 +2,7 @@
     <section class="sidebar">
         <div class="sidebar-container">
             <div class="sidebar__button-wrapper">
-                <div class="sidebar__close-box">
+                <div class="sidebar__close-box" @click="$emit('closeSidebar')">
                     <span class="close-box__line"></span>
                     <span class="close-box__line"></span>
                 </div>
