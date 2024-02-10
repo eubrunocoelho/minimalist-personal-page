@@ -9,16 +9,16 @@
             </div>
             <ul class="sidebar__menu">
                 <li>
-                    <a href="#" class="sidebar__link">Home</a>
+                    <a href="javascript:void(0)" class="sidebar__link" @click="handleClick('header')">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">Sobre</a>
+                    <a href="javascript:void(0)" class="sidebar__link" @click="handleClick('about')">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">Habilidades</a>
+                    <a href="javascript:void(0)" class="sidebar__link" @click="handleClick('skills')">Habilidades</a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">Contato</a>
+                    <a href="javascript:void(0)" class="sidebar__link" @click="handleClick('contact')">Contato</a>
                 </li>
             </ul>
         </div>
@@ -27,6 +27,15 @@
 
 <script>
 export default {
-    name: 'VueSidebar'
+    name: 'VueSidebar',
+    methods: {
+        handleClick(elementId) {
+            this.scrollToId(elementId);
+            this.$emit('closeSidebar');
+        },
+        scrollToId(elementId) {
+            this.$emit('scrollToId', elementId);
+        }
+    }
 };
 </script>

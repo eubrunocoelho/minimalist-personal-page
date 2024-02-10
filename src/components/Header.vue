@@ -6,20 +6,20 @@
                 <span class="toggle-box__line"></span>
                 <span class="toggle-box__line"></span>
             </div>
-            <a href="#" class="header__logo">Bruno Coelho</a>
+            <a href="javascript:void(0)" class="header__logo" @click="scrollToId('header')">Bruno Coelho</a>
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li>
-                        <a href="#" class="header__link">Home</a>
+                        <a href="javascript:void(0)" class="header__link" @click="scrollToId('header')">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Sobre</a>
+                        <a href="javascript:void(0)" class="header__link" @click="scrollToId('about')">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Habilidades</a>
+                        <a href="javascript:void(0)" class="header__link" @click="scrollToId('skills')">Habilidades</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Contato</a>
+                        <a href="javascript:void(0)" class="header__link" @click="scrollToId('contact')">Contato</a>
                     </li>
                 </ul>
                 <div class="header__theme-switch" @click="switchTheme">
@@ -66,6 +66,9 @@ export default {
 
                 this.darkMode = true;
             }
+        },
+        scrollToId(elementId) {
+            this.$emit('scrollToId', elementId);
         }
     }
 };

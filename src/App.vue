@@ -1,18 +1,18 @@
 <template>
     <div id="app-container">
-        <transition name="window-overlay">
-            <div class="window-overlay" v-show="overlayIsVisible" @click="isOverlay($event)" ref="windowOverlay">
+        <transition name="window-overlay" ref="windowOverlay">
+            <div class="window-overlay" v-show="overlayIsVisible" @click="isOverlay($event)">
                 <transition name="sidebar">
-                    <VueSidebar v-if="sidebarIsVisible" @closeSidebar="closeSidebar"></VueSidebar>
+                    <VueSidebar v-if="sidebarIsVisible" @closeSidebar="closeSidebar" @scrollToId="scrollToId"></VueSidebar>
                 </transition>
             </div>
         </transition>
-        <VueHeader @openSidebar="openSidebar"></VueHeader>
+        <VueHeader @openSidebar="openSidebar" @scrollToId="scrollToId" id="header"></VueHeader>
         <main class="main">
             <VuePresentation></VuePresentation>
-            <VueAbout></VueAbout>
-            <VueSkills></VueSkills>
-            <VueContact></VueContact>
+            <VueAbout id="about"></VueAbout>
+            <VueSkills id="skills"></VueSkills>
+            <VueContact id="contact"></VueContact>
         </main>
         <VueFooter></VueFooter>
     </div>
@@ -28,6 +28,7 @@ import VueContact from './components/Contact.vue';
 import VueFooter from './components/Footer.vue';
 
 export default {
+    el: '#app',
     name: 'App',
     components: { VueSidebar, VueHeader, VuePresentation, VueAbout, VueSkills, VueContact, VueFooter },
     data() {
@@ -44,11 +45,26 @@ export default {
             [this.overlayIsVisible, this.sidebarIsVisible] = [false, false];
         },
         isOverlay(event) {
-            let windowOverlay = this.$refs.windowOverlay;
+            const windowOverlay = this.$refs.windowOverlay;
 
-            if (windowOverlay && windowOverlay.contains(event.target)) {
+            if (windowOverlay && (event.target == windowOverlay)) {
                 this.closeSidebar();
             }
+        },
+        scrollToId(elementId) {
+            const element = this.$el.querySelector('#' + elementId);
+            const offset = (58 /** heading max height size */ + 26);
+
+            if (element) {
+                const position = element.getBoundingClientRect().top + window.scrollY;
+                var scrollPosition = position - offset;
+            }
+
+            if (elementId == 'header') {
+                scrollPosition = 0;
+            }
+
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
         }
     }
 }
