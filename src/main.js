@@ -9,6 +9,17 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { log } from './utils/utils';
 import './assets/scss/styles.scss';
 
+const ioniconsModuleScript = document.createElement('script');
+const ioniconsNomoduleScript = document.createElement('script');
+
+ioniconsModuleScript.setAttribute('type', 'module');
+ioniconsModuleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js');
+document.head.appendChild(ioniconsModuleScript);
+
+ioniconsNomoduleScript.setAttribute('nomodule', '');
+ioniconsNomoduleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
+document.head.appendChild(ioniconsNomoduleScript);
+
 library.add(fas, fab, far);
 dom.watch();
 
