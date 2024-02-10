@@ -14,10 +14,12 @@ const ioniconsNomoduleScript = document.createElement('script');
 
 ioniconsModuleScript.setAttribute('type', 'module');
 ioniconsModuleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js');
-document.head.appendChild(ioniconsModuleScript);
+
 
 ioniconsNomoduleScript.setAttribute('nomodule', '');
 ioniconsNomoduleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
+
+document.head.appendChild(ioniconsModuleScript);
 document.head.appendChild(ioniconsNomoduleScript);
 
 library.add(fas, fab, far);
