@@ -8,13 +8,13 @@
                 </div>
                 <ul class="footer__menu">
                     <li>
-                        <a href="#" class="footer__link">Sobre</a>
+                        <a href="javascript:void(0)" class="footer__link" @click="scrollToId('about')">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Habilidades</a>
+                        <a href="javascript:void(0)" class="footer__link" @click="scrollToId('skills')">Habilidades</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Contato</a>
+                        <a href="javascript:void(0)" class="footer__link" @click="scrollToId('contact')">Contato</a>
                     </li>
                 </ul>
                 <ul class="footer__socials">
@@ -36,7 +36,8 @@
                 </ul>
             </nav>
             <div class="footer__copy">
-                <p class="footer__text">© Copyright 2024 - Desenvolvido por <span class="footer__dev">Bruno Coelho</span>.</p>
+                <p class="footer__text">© Copyright 2024 - Desenvolvido por <span class="footer__dev">Bruno Coelho</span>.
+                </p>
             </div>
         </div>
     </footer>
@@ -44,6 +45,11 @@
 
 <script>
 export default {
-    name: 'VueFooter'
+    name: 'VueFooter',
+    methods: {
+        scrollToId(elementId) {
+            this.$emit('scrollToId', elementId);
+        }
+    }
 };
 </script>

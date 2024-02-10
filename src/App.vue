@@ -14,7 +14,7 @@
             <VueSkills id="skills"></VueSkills>
             <VueContact id="contact"></VueContact>
         </main>
-        <VueFooter></VueFooter>
+        <VueFooter @scrollToId="scrollToId"></VueFooter>
     </div>
 </template>
 
