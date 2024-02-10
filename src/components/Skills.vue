@@ -64,10 +64,10 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('scroll', this.scrollAnimation);
+        window.addEventListener('scroll', this.scrollPosition);
     },
     methods: {
-        scrollAnimation() {
+        scrollPosition() {
             const visibleHeight = window.innerHeight + window.scrollY;
 
             for (const category in this.skills) {
