@@ -1,15 +1,13 @@
 <template>
     <div class="contact__form">
         <form @submit.prevent="onSubmit()">
-            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask"
-                v-model.trim="form.phone">
-            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..."
-                v-model.trim="form.email">
-            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject">
-            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"></textarea>
+            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask" v-model.trim="form.phone" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject" :disabled="sendingStatus">
+            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message" :disabled="sendingStatus"></textarea>
             <div class="form__button-area">
-                <button type="submit" class="button">Enviar</button>
+                <button type="submit" class="button" :disabled="true">Enviar</button>
             </div>
         </form>
         <div class="form__alerts" v-if="(v$.form.$errors.length > 0) && (!sendingStatus)">
@@ -20,6 +18,9 @@
             </template>
         </div>
         <div class="form__alerts" v-if="sendingStatus">
+            <div :style="{ width: '100%', display: 'flex', justifyContent: 'center' }" v-if="loader">
+                <div class="loader"></div>
+            </div>
             <div class="alert alert--success" v-if="sendStatus == 'SUCCESS'">
                 <p>Mensagem enviada com sucesso!</p>
             </div>
@@ -46,6 +47,7 @@ export default {
         return {
             form: { name: '', phone: '', email: '', subject: '', message: '' },
             sendingStatus: false,
+            loader: true,
             sendStatus: ''
         }
     },
@@ -109,9 +111,11 @@ export default {
 
                 contact.send(this.form)
                     .then(() => {
+                        this.loader = false;
                         this.sendStatus = 'SUCCESS';
                     })
                     .catch(() => {
+                        this.loader = false;
                         this.sendStatus = 'ERROR';
                     });
             }
