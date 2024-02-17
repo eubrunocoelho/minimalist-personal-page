@@ -9,18 +9,18 @@
                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                     in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <VueSocials :socials="socials"></VueSocials>
+            <VueAboutSocials :socials="socials"></VueAboutSocials>
         </div>
     </section>
 </template>
 
 <script>
 import VueHeading from './Common/Heading.vue';
-import VueSocials from './About/Socials.vue';
+import VueAboutSocials from './About/Socials.vue';
 
 export default {
     name: 'VueAbout',
-    components: { VueHeading, VueSocials },
+    components: { VueHeading, VueAboutSocials },
     data() {
         return {
             socials: {

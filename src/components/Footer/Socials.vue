@@ -1,7 +1,7 @@
 <template>
-    <ul class="about__socials">
-        <li class="about__socials-item" v-for="(item, id) in socials" :key="id">
-            <a :href="item.url" target="_blank" class="about__socials-link">
+    <ul class="footer__socials">
+        <li class="footer__socials-item" v-for="(item, id) in socials" :key="id">
+            <a :href="item.url" class="footer__socials-link">
                 <i :class="item.classIcon"></i>
             </a>
         </li>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name: 'VueAboutSocials',
+    name: 'VueFooterSocials',
     props: {
         socials: {
             required: true,
