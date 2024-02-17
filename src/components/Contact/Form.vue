@@ -2,20 +2,30 @@
     <div class="contact__form">
         <form @submit.prevent="onSubmit()">
             <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask" v-model.trim="form.phone">
-            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask"
+                v-model.trim="form.phone">
+            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..."
+                v-model.trim="form.email">
             <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject">
             <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"></textarea>
             <div class="form__button-area">
                 <button type="submit" class="button">Enviar</button>
             </div>
         </form>
-        <div class="form__alerts" v-if="(v$.form.$errors.length > 0)">
+        <div class="form__alerts" v-if="(v$.form.$errors.length > 0) && (!sendingStatus)">
             <template v-for="(error, id) of v$.form.$errors" :key="id">
                 <div class="alert alert--danger">
                     <p>{{ error.$message }}</p>
                 </div>
             </template>
+        </div>
+        <div class="form__alerts" v-if="sendingStatus">
+            <div class="alert alert--success" v-if="sendStatus == 'SUCCESS'">
+                <p>Mensagem enviada com sucesso!</p>
+            </div>
+            <div class="alert alert--danger" v-if="sendStatus == 'ERROR'">
+                <p>Houve um erro ao tentar enviar a mensagem. Atualize a página e tente novamente.</p>
+            </div>
         </div>
     </div>
 </template>
@@ -23,6 +33,7 @@
 <script>
 import useVuelidate from '@vuelidate/core';
 import { helpers, required, minLength, maxLength, email } from '@vuelidate/validators';
+import contact from './../../services/contact';
 
 export default {
     name: 'VueForm',
@@ -33,7 +44,9 @@ export default {
     },
     data() {
         return {
-            form: { name: '', phone: '', email: '', subject: '', message: '' }
+            form: { name: '', phone: '', email: '', subject: '', message: '' },
+            sendingStatus: false,
+            sendStatus: ''
         }
     },
     validations() {
@@ -55,7 +68,7 @@ export default {
                 },
                 subject: {
                     required: helpers.withMessage('O campo "assunto" é obrigatório.', required),
-                    minLength: helpers.withMessage(({ $params }) => `O campo "assunto" deve conter pelo menos ${$params.min} caracteres.`, minLength(12)),
+                    minLength: helpers.withMessage(({ $params }) => `O campo "assunto" deve conter pelo menos ${$params.min} caracteres.`, minLength(6)),
                     maxLength: helpers.withMessage(({ $params }) => `O campo "assunto" deve conter no máximo ${$params.max} caracteres.`, maxLength(128))
                 },
                 message: {
@@ -90,6 +103,18 @@ export default {
         },
         onSubmit() {
             this.v$.form.$touch();
+
+            if (!this.v$.form.$invalid) {
+                this.sendingStatus = true;
+
+                contact.send(this.form)
+                    .then(() => {
+                        this.sendStatus = 'SUCCESS';
+                    })
+                    .catch(() => {
+                        this.sendStatus = 'ERROR';
+                    });
+            }
         }
     }
 };
