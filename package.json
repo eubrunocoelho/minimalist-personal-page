@@ -17,8 +17,7 @@
 		"@vuelidate/validators": "^2.0.4",
 		"axios": "^1.6.7",
 		"core-js": "^3.8.3",
-		"vue": "^3.2.13",
-		"vue-writer": "^1.2.0"
+		"vue": "^3.2.13"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.16",
