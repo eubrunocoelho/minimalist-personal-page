@@ -9,7 +9,7 @@
         </transition>
         <VueHeader @openSidebar="openSidebar" @scrollToId="scrollToId" id="header"></VueHeader>
         <main class="main">
-            <VuePresentation></VuePresentation>
+            <VuePresentation @scrollToId="scrollToId"></VuePresentation>
             <VueAbout id="about"></VueAbout>
             <VueSkills id="skills"></VueSkills>
             <VueContact id="contact"></VueContact>
