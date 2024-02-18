@@ -1,5 +1,8 @@
 <template>
     <div id="app-container">
+        <div class="preloader" :class="{ 'preloader-hidden': !loading }">
+            <div class="loader loader--default-color"></div>
+        </div>
         <transition name="window-overlay" ref="windowOverlay">
             <div class="window-overlay" v-show="overlayIsVisible" @click="isOverlay($event)">
                 <transition name="sidebar">
@@ -33,9 +36,15 @@ export default {
     components: { VueSidebar, VueHeader, VuePresentation, VueAbout, VueSkills, VueContact, VueFooter },
     data() {
         return {
+            loading: true,
             overlayIsVisible: false,
             sidebarIsVisible: false
         }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.loading = false;
+        }, 999);
     },
     methods: {
         openSidebar() {
@@ -76,6 +85,11 @@ export default {
  * VUE TRANSITIONS
  * =================================================================================
  */
+
+.preloader-hidden {
+    opacity: 0 !important;
+    pointer-events: none;
+}
 
 .window-overlay-enter-active {
     animation: window-overlay .19s ease;

@@ -24,6 +24,13 @@
     }
 }
 
+.loader {
+    &--default-color {
+        border-color: #d2dde3 !important;
+        border-right-color: #1a2026 !important;
+    }
+}
+
 .text {
     &--assent-color {
         color: var(--text-assent-color) !important
