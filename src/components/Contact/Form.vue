@@ -1,11 +1,16 @@
 <template>
     <div class="contact__form">
         <form @submit.prevent="onSubmit()">
-            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name" :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask" v-model.trim="form.phone" :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email" :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject" :disabled="sendingStatus">
-            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message" :disabled="sendingStatus"></textarea>
+            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name"
+                :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask"
+                v-model.trim="form.phone" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..."
+                v-model.trim="form.email" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject"
+                :disabled="sendingStatus">
+            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"
+                :disabled="sendingStatus"></textarea>
             <div class="form__button-area">
                 <button type="submit" class="button" :disabled="sendingStatus">Enviar</button>
             </div>
@@ -33,15 +38,14 @@
 
 <script>
 import useVuelidate from '@vuelidate/core';
-import { helpers, required, minLength, maxLength, email } from '@vuelidate/validators';
+import { validations } from './../../validations/validations';
 import contact from './../../services/contact';
 
 export default {
     name: 'VueForm',
     setup() {
-        return {
-            v$: useVuelidate()
-        }
+        const v$ = useVuelidate(validations);
+        return { v$ };
     },
     data() {
         return {
@@ -52,34 +56,7 @@ export default {
         }
     },
     validations() {
-        return {
-            form: {
-                name: {
-                    required: helpers.withMessage('O campo "nome" é obrigatório.', required),
-                    minLength: helpers.withMessage(({ $params }) => `O campo "nome" deve conter pelo menos ${$params.min} caracteres.`, minLength(3)),
-                    maxLength: helpers.withMessage(({ $params }) => `O campo "nome" deve conter no máximo ${$params.max} caracteres.`, maxLength(128))
-                },
-                phone: {
-                    required: helpers.withMessage('O campo "telefone" é obrigatório.', required),
-                    regex: helpers.withMessage('O formato de "telefone" deve ser (DD) 00000-0000 ou (DD) 0000-0000.', helpers.regex(/^\([0-9]{2}\) [0-9]?[0-9]{4}-[0-9]{4}$/))
-                },
-                email: {
-                    required: helpers.withMessage('O campo "e-mail" é obrigatório.', required),
-                    email: helpers.withMessage('O campo "e-mail" está inválido.', email),
-                    maxLength: helpers.withMessage(({ $params }) => `O campo "e-mail" deve conter no máximo ${$params.max} caracteres.`, maxLength(128))
-                },
-                subject: {
-                    required: helpers.withMessage('O campo "assunto" é obrigatório.', required),
-                    minLength: helpers.withMessage(({ $params }) => `O campo "assunto" deve conter pelo menos ${$params.min} caracteres.`, minLength(6)),
-                    maxLength: helpers.withMessage(({ $params }) => `O campo "assunto" deve conter no máximo ${$params.max} caracteres.`, maxLength(128))
-                },
-                message: {
-                    required: helpers.withMessage('O campo "mensagem" é obrigatório.', required),
-                    minLength: helpers.withMessage(({ $params }) => `O campo "mensagem" deve conter pelo menos ${$params.min} caracteres.`, minLength(20)),
-                    maxLength: helpers.withMessage(({ $params }) => `O campo "mensagem" deve conter no máximo ${$params.max} caracteres.`, maxLength(1200))
-                },
-            }
-        }
+        return validations;
     },
     methods: {
         phoneMask() {
