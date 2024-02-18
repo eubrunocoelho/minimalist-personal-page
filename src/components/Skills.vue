@@ -10,13 +10,13 @@
                 <h2 class="skills__header">Back-End</h2>
                 <VueSkill :skills="skills.backend"></VueSkill>
             </div>
-            <div class="skills__category" ref="database">
-                <h2 class="skills__header">Banco de Dados</h2>
-                <VueSkill :skills="skills.database"></VueSkill>
-            </div>
             <div class="skills__category" ref="frameworks">
                 <h2 class="skills__header">Frameworks</h2>
                 <VueSkill :skills="skills.frameworks"></VueSkill>
+            </div>
+            <div class="skills__category" ref="database">
+                <h2 class="skills__header">Banco de Dados</h2>
+                <VueSkill :skills="skills.database"></VueSkill>
             </div>
         </div>
     </section>
@@ -35,29 +35,30 @@ export default {
                 frontend: {
                     items: [
                         { beforeLevel: 1 /** do not modify */, name: 'HTML5', classIcon: 'icon--html', level: 85 },
-                        { beforeLevel: 1 /** do not modify */, name: 'CSS3', classIcon: 'icon--css', level: 75 },
-                        { beforeLevel: 1 /** do not modify */, name: 'JavaScript', classIcon: 'icon--javascript', level: 69 },
-                        { beforeLevel: 1 /** do not modify */, name: 'TypeScript', classIcon: 'icon--typescript', level: 17 }
+                        { beforeLevel: 1 /** do not modify */, name: 'CSS3', classIcon: 'icon--css', level: 81 },
+                        { beforeLevel: 1 /** do not modify */, name: 'JavaScript', classIcon: 'icon--javascript', level: 75 },
+                        { beforeLevel: 1 /** do not modify */, name: 'TypeScript', classIcon: 'icon--typescript', level: 49 }
                     ]
                 },
                 backend: {
                     items: [
-                        { beforeLevel: 1 /** do not modify */, name: 'PHP', classIcon: 'icon--php', level: 72 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Node.js', classIcon: 'icon--nodejs', level: 35 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Java', classIcon: 'icon--java', level: 13 }
+                        { beforeLevel: 1 /** do not modify */, name: 'PHP', classIcon: 'icon--php', level: 73 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Node.js', classIcon: 'icon--nodejs', level: 44 }
                     ]
                 },
                 database: {
                     items: [
-                        { beforeLevel: 1 /** do not modify */, name: 'MySQL', classIcon: 'icon--mysql', level: 49 },
+                        { beforeLevel: 1 /** do not modify */, name: 'MySQL', classIcon: 'icon--mysql', level: 51 },
                         { beforeLevel: 1 /** do not modify */, name: 'SQL Server', classIcon: 'icon--sqlserver', level: 36 }
                     ]
                 },
                 frameworks: {
                     items: [
                         { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 42 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 47 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 31 }
+                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 48 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 61 },
+                        { beforeLevel: 1 /** do not modify */, name: 'jQuery', classIcon: 'icon--jquery', level: 44 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Sass', classIcon: 'icon--sass', level: 36 },
                     ]
                 }
             }
