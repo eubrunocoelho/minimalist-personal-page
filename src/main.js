@@ -14,7 +14,6 @@ const ioniconsNomoduleScript = document.createElement('script');
 ioniconsModuleScript.setAttribute('type', 'module');
 ioniconsModuleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js');
 
-
 ioniconsNomoduleScript.setAttribute('nomodule', '');
 ioniconsNomoduleScript.setAttribute('src', 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
 
