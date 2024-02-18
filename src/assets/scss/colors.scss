@@ -7,6 +7,10 @@
 :root {
     /*========== APP ==========*/
     --app-background-color: #eceff1;
+    /*========== SCROLLBAR ==========*/
+    --scrollbar-track-color: #232930;
+    --scrollbar-thumb-color: #3569a8;
+    --scrollbar-thumb-hover-color: #1e4575;
     /*========== WINDOW ==========*/
     --window-overlay-color: rgba(42, 42, 42, .4);
     /*========== LOADER ==========*/
@@ -83,6 +87,10 @@
 [theme="dark"] {
     /*========== APP ==========*/
     --app-background-color: #272f37;
+    /*========== SCROLLBAR ==========*/
+    --scrollbar-track-color: #232930;
+    --scrollbar-thumb-color: #3569a8;
+    --scrollbar-thumb-hover-color: #1e4575;
     /*========== WINDOW ==========*/
     --window-overlay-color: rgba(42, 42, 42, .4);
     /*========== LOADER ==========*/
