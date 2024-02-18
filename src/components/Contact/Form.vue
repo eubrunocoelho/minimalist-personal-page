@@ -1,16 +1,11 @@
 <template>
     <div class="contact__form">
         <form @submit.prevent="onSubmit()">
-            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name"
-                :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." @input="phoneMask"
-                v-model.trim="form.phone" :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..."
-                v-model.trim="form.email" :disabled="sendingStatus">
-            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject"
-                :disabled="sendingStatus">
-            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message"
-                :disabled="sendingStatus"></textarea>
+            <input type="text" class="form__input-text" placeholder="Digite seu nome..." v-model.trim="form.name" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu telefone/whatsapp..." v-maska data-maska="['(##) #####-####', '(##) ####-####']" v-model.trim="form.phone" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite seu endereço de e-mail..." v-model.trim="form.email" :disabled="sendingStatus">
+            <input type="text" class="form__input-text" placeholder="Digite o assunto..." v-model.trim="form.subject" :disabled="sendingStatus">
+            <textarea class="form__textarea" placeholder="Escreva sua mensagem..." v-model.trim="form.message" :disabled="sendingStatus"></textarea>
             <div class="form__button-area">
                 <button type="submit" class="button" :disabled="sendingStatus">Enviar</button>
             </div>
@@ -43,10 +38,6 @@ import form from './../../services/form';
 
 export default {
     name: 'VueForm',
-    setup() {
-        const v$ = useVuelidate(validations);
-        return { v$ };
-    },
     data() {
         return {
             form: { name: '', phone: '', email: '', subject: '', message: '' },
@@ -55,31 +46,15 @@ export default {
             sendStatus: ''
         }
     },
+    setup() {
+        const v$ = useVuelidate(validations);
+        
+        return { v$ };
+    },
     validations() {
         return validations;
     },
     methods: {
-        phoneMask() {
-            let phoneValue = this.form.phone.replace(/\D/g, '');
-            let formattedValue = '';
-
-            if (phoneValue.length > 0) {
-                formattedValue = '(' + phoneValue.substring(0, 2);
-
-                if (phoneValue.length > 10) {
-                    formattedValue += ') ' + phoneValue.substring(2, 7);
-                    formattedValue += '-' + phoneValue.substring(7, 11);
-                } else {
-                    formattedValue += ') ' + phoneValue.substring(2, 6);
-
-                    if (phoneValue.length > 6) {
-                        formattedValue += '-' + phoneValue.substring(6, 10);
-                    }
-                }
-            }
-
-            this.form.phone = formattedValue;
-        },
         onSubmit() {
             this.v$.form.$touch();
 
