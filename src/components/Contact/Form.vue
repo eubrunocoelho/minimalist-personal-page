@@ -39,7 +39,7 @@
 <script>
 import useVuelidate from '@vuelidate/core';
 import { validations } from './../../validations/validations';
-import contact from './../../services/contact';
+import form from './../../services/form';
 
 export default {
     name: 'VueForm',
@@ -86,7 +86,7 @@ export default {
             if (!this.v$.form.$invalid) {
                 this.sendingStatus = true;
 
-                contact.send(this.form)
+                form.send(this.form)
                     .then(() => {
                         this.loader = false;
                         this.sendStatus = 'SUCCESS';
