@@ -44,7 +44,7 @@ export default {
     mounted() {
         setTimeout(() => {
             this.loading = false;
-        }, 999);
+        }, 3000);
     },
     methods: {
         openSidebar() {
