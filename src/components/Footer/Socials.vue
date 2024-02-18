@@ -1,7 +1,7 @@
 <template>
     <ul class="footer__socials">
         <li class="footer__socials-item" v-for="(item, id) in socials" :key="id">
-            <a :href="item.url" class="footer__socials-link">
+            <a :href="item.url"  target="_blank" class="footer__socials-link">
                 <i :class="item.classIcon"></i>
             </a>
         </li>
