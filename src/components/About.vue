@@ -3,7 +3,7 @@
         <VueHeading title="Sobre Mim" subtitle="Bruno Coelho"></VueHeading>
         <div class="section__about">
             <div class="about__summary">
-                <p class="about__text">Olá, meu nome é Bruno Coelho. Atualmente atuo como Desenvolvedor Full-Stack com sede de conhecimento por tecnologia. Embarquei na programação em 2021, desde então me dedico a aprender e aprimorar minhas habilidades nesse campo dinâmico. Estou sempre entusiasmado com as invovações tecnológicas e os desafios que a programação oferece.</p>
+                <p class="about__text">Meu nome é Bruno, atualmente atuo como Desenvolvedor Full-Stack e Web Designer. Tenho sede de conhecimento por tecnologia. Embarquei na programação em 2021 com o objetivo de colocar em prática os meu projetos de Web Designer, desde então me dedico a aprender e aprimorar cada vez mais minhas habilidades nesse campo dinâmico que é a programação. Estou sempre entusiasmado com as inovações tecnológicas e os desafios que ela proporciona.</p>
             </div>
             <VueAboutSocials :socials="socials"></VueAboutSocials>
         </div>
