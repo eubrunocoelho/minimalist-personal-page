@@ -54,8 +54,8 @@ export default {
                 },
                 frameworks: {
                     items: [
-                        { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 42 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 48 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 53 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 35 },
                         { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 61 },
                         { beforeLevel: 1 /** do not modify */, name: 'jQuery', classIcon: 'icon--jquery', level: 44 },
                         { beforeLevel: 1 /** do not modify */, name: 'Sass', classIcon: 'icon--sass', level: 36 },
