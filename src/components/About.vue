@@ -3,11 +3,7 @@
         <VueHeading title="Sobre Mim" subtitle="Bruno Coelho"></VueHeading>
         <div class="section__about">
             <div class="about__summary">
-                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="about__text">Olá, meu nome é Bruno Coelho. Atualmente atuo como Desenvolvedor Full-Stack com sede de conhecimento por tecnologia. Embarquei na programação em 2021. Desde então, me dedico a aprender e aprimorar minhas habilidades nesse campo dinâmico. Estou sempre entusiasmado com as invovações tecnológicas e os desafios que a programação oferece.</p>
             </div>
             <VueAboutSocials :socials="socials"></VueAboutSocials>
         </div>
