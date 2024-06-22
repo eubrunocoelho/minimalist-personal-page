@@ -46,21 +46,21 @@ export default {
                         { beforeLevel: 1 /** do not modify */, name: 'Node.js', classIcon: 'icon--nodejs', level: 44 }
                     ]
                 },
+                frameworks: {
+                    items: [
+                        { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 61 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 35 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 61 },
+                        { beforeLevel: 1 /** do not modify */, name: 'jQuery', classIcon: 'icon--jquery', level: 60 },
+                        { beforeLevel: 1 /** do not modify */, name: 'Sass', classIcon: 'icon--sass', level: 63 },
+                    ]
+                },
                 database: {
                     items: [
                         { beforeLevel: 1 /** do not modify */, name: 'MySQL', classIcon: 'icon--mysql', level: 59 },
                         { beforeLevel: 1 /** do not modify */, name: 'SQL Server', classIcon: 'icon--sqlserver', level: 36 },
                         { beforeLevel: 1 /** do not modify */, name: 'PostgreSQL', classIcon: 'icon--postgresql', level: 25},
                         { beforeLevel: 1 /** do not modify */, name: 'MongoDB', classIcon: 'icon--mongodb', level: 21 }
-                    ]
-                },
-                frameworks: {
-                    items: [
-                        { beforeLevel: 1 /** do not modify */, name: 'Laravel', classIcon: 'icon--laravel', level: 61 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Express.js', classIcon: 'icon--expressjs', level: 35 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Vue.js', classIcon: 'icon--vuejs', level: 61 },
-                        { beforeLevel: 1 /** do not modify */, name: 'jQuery', classIcon: 'icon--jquery', level: 59 },
-                        { beforeLevel: 1 /** do not modify */, name: 'Sass', classIcon: 'icon--sass', level: 63 },
                     ]
                 }
             }
