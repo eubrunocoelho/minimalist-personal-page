@@ -1,7 +1,7 @@
 <template>
     <section class="section">
         <div class="section__presentation">
-            <img src="./../assets/img/profile-img.png" class="presentation__profile-img">
+            <img src="./../assets/img/profile-img.jpg" class="presentation__profile-img">
             <div class="presentation__summary">
                 <h1 class="presentation__title">Olá, sou o Bruno</h1>
                 <p class="presentation__text">Desenvolvedor Full-Stack,<br /> criando <span class="text--assent-color">{</span> soluções para a web <span class="text--assent-color">}</span>.</p>
